@@ -1,0 +1,40 @@
+.wrapper {
+  background-color: #698ed9;
+  min-height: 100vh;
+  display: flex;
+
+  & .leftSide {
+    margin: 20px;
+    width: 50%;
+
+    & .facts {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      height: 40%;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+    & .skills {
+      display: flex;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      height: 40%;
+      text-align: left;
+    }
+  }
+
+  & .rightSide {
+    margin: 20px;
+    width: 50%;
+
+    & .timeLine {
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      height: 90%;
+      text-align: left;
+    }
+  }
+}
