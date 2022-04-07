@@ -1,0 +1,92 @@
+.successfulEvent {
+  .icon {
+    margin-top: 20px;
+    cursor: pointer;
+    color: #afb1b2;
+    position: relative;
+    left: 1px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 28px;
+      left: calc(50% - 1px);
+      border: 1px solid #afb1b2;
+      border-radius: 5px;
+      width: 1px;
+      height: calc(100% - 4px);
+      transition: height 0.4s;
+    }
+
+    &.lastEvent {
+      &:before {
+        border: none;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .timestamp {
+    text-align: right;
+    font-size: 14px;
+    width: 170px;
+    color: #959899;
+    margin-top: 22px;
+
+    & .title {
+      color: #afb1b2;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    & .dateFrom {
+      color: #afb1b2;
+    }
+
+    &.groupedError {
+      margin-top: 10px;
+    }
+  }
+
+  .icon:before {
+    border-style: solid;
+    background-color: #669900;
+  }
+
+  .successfulCJ {
+    .icon {
+      color: #c7d7a9;
+      &:before {
+        border-color: #c7d7a9;
+      }
+    }
+
+    .timestamp {
+      color: #494e51;
+
+      & .title {
+        color: #c7d7a9;
+      }
+    }
+
+    .customerJourneyEventItem {
+      border-color: #c8cacb;
+    }
+  }
+}
+
+.row {
+  display: flex;
+
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}

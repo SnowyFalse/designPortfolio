@@ -1,0 +1,33 @@
+.title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+
+  .headline {
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+  }
+
+  .content {
+    font-size: 20px;
+    width: 350px;
+
+    a {
+      color: #656565;
+    }
+  }
+
+  .iconWrapper {
+    margin-left: 5px;
+    vertical-align: center;
+  }
+}
+
+
