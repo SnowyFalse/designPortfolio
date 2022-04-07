@@ -1,0 +1,22 @@
+.details {
+  margin-bottom: 5px;
+  padding-left: 10px;
+
+  & .info {
+    margin-left: 55px;
+    margin-top: 15px;
+    padding-right: 55px;
+  }
+
+  & .noData {
+    margin-left: 55px;
+    margin-bottom: 10px;
+    padding-right: 55px;
+  }
+}
+
+.contentSpace {
+  & > div {
+    margin-bottom: 15px;
+  }
+}

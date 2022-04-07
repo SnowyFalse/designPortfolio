@@ -1,0 +1,107 @@
+.customerJourneyEventOverview {
+  position: relative;
+
+  // add arrow to the right at customer event item
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: -9px;
+    top: calc(50% - 8px);
+    width: 16px;
+    height: 16px;
+    transform: rotate(135deg);
+  }
+
+  & .expander {
+    position: relative;
+    top: 6px;
+    right: 6px;
+    color: #494e51;
+    padding: 10px;
+  }
+
+  & .centeredEvent {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  & .centeredIcon {
+    position: relative;
+    top: 4px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &.event {
+    min-height: 58px;
+    padding-left: 10px;
+    background: #c7d7a9;
+    padding-bottom: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:after {
+      border-bottom: 1px solid #e3e4e4;
+      border-right: 1px solid #e3e4e4;
+      background-color: #c7d7a9;
+    }
+
+    & .data {
+      color: #7b7e80;
+      padding: 5px 10px;
+
+      & .name {
+        font-size: 18px;
+        font-weight: bold;
+        word-break: break-word;
+      }
+
+      & .time {
+        font-size: 14px;
+      }
+    }
+
+    &.collapsed {
+      &.data {
+        color: #7b7e80;
+      }
+    }
+
+    &.expanded {
+      &:after {
+        border-bottom: 1px solid #c8cacb;
+        border-right: 1px solid #c8cacb;
+      }
+      & .data {
+        color: #494e51;
+      }
+    }
+
+    & .icon {
+      padding: 10px;
+      color: #669900;
+    }
+  }
+
+  &.successfulCJ {
+    &:after {
+      border-bottom: 1px solid #c8cacb;
+      border-right: 1px solid #c8cacb;
+    }
+    .data {
+      color: #494e51;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}

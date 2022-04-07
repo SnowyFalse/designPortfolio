@@ -5,6 +5,7 @@
     color: #afb1b2;
     position: relative;
     left: 1px;
+    margin-bottom: 10px;
 
     &:before {
       content: '';
@@ -89,4 +90,31 @@
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.itemContent {
+  min-height: 58px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  &.expanded {
+    border: 1px solid #c8cacb;
+    margin-bottom: 10px;
+  }
+
+  &.collapsed {
+    border: 1px solid #e3e4e4;
+    margin-bottom: 10px;
+  }
 }
