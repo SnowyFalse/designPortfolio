@@ -3,13 +3,18 @@ import './App.css';
 import {Route, Routes} from "react-router-dom";
 import {AboutMe} from "./about-me/AboutMe";
 import {LandingPage} from "./landing-page/LandingPage";
+import {Games} from "./games/Games";
+import {Navbar} from "./navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path={'/'} element={<LandingPage/>}/>
-        <Route path={'/aboutme'} element={<AboutMe/>}/>
+        <Route path={'/portfolio'} element={<Navbar/>}>
+          <Route path={'/portfolio/aboutme'} element={<AboutMe/>}/>
+          <Route path={'/portfolio/games'} element={<Games/>}/>
+        </Route>
       </Routes>
     </div>
   );
