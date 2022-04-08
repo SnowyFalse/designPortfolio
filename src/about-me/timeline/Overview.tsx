@@ -4,7 +4,6 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export function Overview({ onClick, expanded, headline }: {expanded: boolean, onClick?: () => void, headline: string}) {
-  // successEvent = event
   let additionalClasses ='event successfulCJ customerJourneyEventOverview';
   additionalClasses += expanded ? ' expanded' : ' collapsed';
   return (

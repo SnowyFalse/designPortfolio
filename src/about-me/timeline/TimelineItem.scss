@@ -1,4 +1,4 @@
-.successfulEvent {
+.timelineItem {
   .icon {
     margin-top: 20px;
     cursor: pointer;
@@ -21,7 +21,7 @@
       transition: height 0.4s;
     }
 
-    &.lastEvent {
+    &.lastEntry {
       &:before {
         border: none;
         background-color: transparent;
@@ -57,7 +57,7 @@
     background-color: #7CB2E3;
   }
 
-  .successfulCJ {
+  .content {
     .icon {
       color: #7CB2E3;
       &:before {

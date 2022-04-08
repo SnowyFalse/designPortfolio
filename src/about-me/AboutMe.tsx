@@ -4,6 +4,7 @@ import {Skills} from "./Skills";
 import {Facts} from "./Facts";
 import {Education} from "./timeline/Education";
 import {Experience} from "./timeline/Experience";
+import DownloadIcon from '@mui/icons-material/Download';
 
 export function AboutMe() {
   return (
@@ -25,7 +26,10 @@ export interface TimelineItemProjection {
 export function Timeline() {
   return (
     <>
-      <h2>Curriculum Vitae</h2>
+      <div className={'cvDownload'}>
+        <h2>Curriculum Vitae</h2>
+        <button><a href="./Lebenslauf_Dietinger.pdf" download><DownloadIcon/>Download CV</a></button>
+      </div>
       <Education/>
       <Experience/>
     </>

@@ -21,7 +21,7 @@ export function Education() {
       </>
     },
     {
-      date: '09/2021.02/2022',
+      date: '09/2021-02/2022',
       headline: 'Masters Degree Program "IT und Wirtschaftsinformatik',
       content: <>
         <p>IT und Wirtschaftsinformatik, University of Applied Science Campus 02 </p>

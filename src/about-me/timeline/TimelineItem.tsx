@@ -6,8 +6,8 @@ import {TimelineItemProjection} from "../AboutMe";
 
 export function TimelineItem({isLastItem, item}: {isLastItem: boolean, item: TimelineItemProjection}) {
   return (
-    <div className={'successfulEvent'}>
-      <div className={'row successfulCJ'}>
+    <div className={'timelineItem'}>
+      <div className={'row content'}>
         <ItemDate date={item.date}/>
         <ItemIcon isLastItem={isLastItem}/>
         <ItemContent item={item}/>
@@ -25,7 +25,7 @@ export function ItemDate({date}: {date: string}) {
 }
 
 export function ItemIcon({isLastItem}: {isLastItem: boolean}) {
-  const classes = isLastItem ? 'icon lastEvent' : 'icon';
+  const classes = isLastItem ? 'icon lastEntry' : 'icon';
 
   return (
     <div className={classes}>
