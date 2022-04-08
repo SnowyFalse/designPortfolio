@@ -3,23 +3,23 @@ import './Overview.scss';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
-export function Overview({ onClick, expanded }: {expanded: boolean, onClick?: () => void;}) {
+export function Overview({ onClick, expanded, headline }: {expanded: boolean, onClick?: () => void, headline: string}) {
   // successEvent = event
   let additionalClasses ='event successfulCJ customerJourneyEventOverview';
   additionalClasses += expanded ? ' expanded' : ' collapsed';
   return (
     <div className={additionalClasses + ' row no-gutters'} onClick={onClick}>
-      <Content/>
+      <Content headline={headline}/>
       <Expander expanded={expanded}/>
     </div>
   )
 }
 
-export function Content() {
+export function Content({headline}: {headline: string}) {
   return (
     <div className={'col data centeredEvent'}>
       <div className={'name row no-gutters'}>
-        test
+        {headline}
       </div>
     </div>
   )

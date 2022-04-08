@@ -32,8 +32,9 @@
   .timestamp {
     text-align: right;
     font-size: 14px;
-    width: 170px;
+    width: 130px;
     color: #959899;
+    padding-right: 10px;
     margin-top: 22px;
 
     & .title {
@@ -53,14 +54,14 @@
 
   .icon:before {
     border-style: solid;
-    background-color: #669900;
+    background-color: #7CB2E3;
   }
 
   .successfulCJ {
     .icon {
-      color: #c7d7a9;
+      color: #7CB2E3;
       &:before {
-        border-color: #c7d7a9;
+        border-color: #7CB2E3;
       }
     }
 
@@ -68,7 +69,7 @@
       color: #494e51;
 
       & .title {
-        color: #c7d7a9;
+        color: #7CB2E3;
       }
     }
 
@@ -109,12 +110,12 @@
   border-radius: 5px;
 
   &.expanded {
-    border: 1px solid #c8cacb;
+    border: 2px solid #c8cacb;
     margin-bottom: 10px;
   }
 
   &.collapsed {
-    border: 1px solid #e3e4e4;
+    border: 2px solid #e3e4e4;
     margin-bottom: 10px;
   }
 }

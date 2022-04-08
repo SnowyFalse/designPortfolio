@@ -35,15 +35,14 @@
   &.event {
     min-height: 58px;
     padding-left: 10px;
-    background: #c7d7a9;
     padding-bottom: 2px;
     cursor: pointer;
     border-radius: 4px;
 
     &:after {
-      border-bottom: 1px solid #e3e4e4;
-      border-right: 1px solid #e3e4e4;
-      background-color: #c7d7a9;
+      border-bottom: 2px solid #e3e4e4;
+      border-right: 2px solid #e3e4e4;
+      background-color: white;
     }
 
     & .data {
@@ -51,8 +50,7 @@
       padding: 5px 10px;
 
       & .name {
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 16px;
         word-break: break-word;
       }
 

@@ -1,13 +1,12 @@
 import * as React from 'react';
 import './Details.scss';
 
-export function Details () {
+export function Details ({content}: {content: React.ReactElement}) {
   return (
     <div className={'details'}>
       <div className={'info row no-gutters'}>
         <div className={'col contentSpace'}>
-          <h4>Title</h4>
-          <p>TEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEST</p>
+          {content}
         </div>
       </div>
     </div>

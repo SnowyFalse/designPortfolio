@@ -6,35 +6,36 @@ body {
 .facts {
   border-radius: 25px;
   position:fixed;
-  width:40%;
-  height:40%;
+  width:37%;
+  height:36%;
   top:20px;
   left:20px;
   background:white;
-  padding: 20px;
+  padding: 40px;
   margin: 20px;
 }
 
 .skills {
   border-radius: 25px;
   position:fixed;
-  width:40%;
-  height:40%;
+  width:37%;
+  height:36%;
   top:50%;
   left:20px;
   background:white;
-  padding: 20px;
+  padding: 40px;
   margin: 20px;
 }
 
 .timeline {
   border-radius: 25px;
   position:fixed;
-  width:48%;
-  height:88%;
+  width:47%;
+  height:84%;
   top:20px;
   left:45%;
   background:white;
-  padding: 20px;
+  padding: 40px;
   margin: 20px;
+  overflow: auto;
 }

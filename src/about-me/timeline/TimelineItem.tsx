@@ -2,32 +2,30 @@ import * as React from 'react';
 import CircleIcon from '@mui/icons-material/Circle';
 import './TimelineItem.scss';
 import {ItemContent} from "./ItemContent";
+import {TimelineItemProjection} from "../AboutMe";
 
-export function TimelineItem({isLastItem}: {isLastItem: boolean}) {
+export function TimelineItem({isLastItem, item}: {isLastItem: boolean, item: TimelineItemProjection}) {
   return (
     <div className={'successfulEvent'}>
       <div className={'row successfulCJ'}>
-        <ItemDate/>
+        <ItemDate date={item.date}/>
         <ItemIcon isLastItem={isLastItem}/>
-        <ItemContent/>
+        <ItemContent item={item}/>
       </div>
     </div>
   )
 }
 
-export function ItemDate() {
+export function ItemDate({date}: {date: string}) {
   return (
     <div className={'col-auto timestamp'}>
-      Since 07.04.2022
+      {date}
     </div>
   )
 }
 
 export function ItemIcon({isLastItem}: {isLastItem: boolean}) {
-  let classes = '';
-  classes += 'icon';
-  classes += isLastItem ? ' ' + 'lastEvent' : '';
-
+  const classes = isLastItem ? 'icon lastEvent' : 'icon';
 
   return (
     <div className={classes}>
