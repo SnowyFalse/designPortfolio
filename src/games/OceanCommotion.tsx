@@ -26,12 +26,13 @@ export function Content() {
   return (
     <div className={'gameWrapper'}>
       <div>
-        <span>Single person production</span>
-        <p>This is a text that describes the game.</p>
-        <p>Here are some details that I can't think of right now.</p>
+        <b>Single person production</b>
+        <p>This simple underwater shoot'em up was designed and developed fully by myself. All the artwork used in the game,
+          except for the music and sound effects - which are copy right free - are selfmade and no additional sources are used</p>
+        <p>This game is the first game I developed back in 2019.</p>
         <WebGLBuild/>
       </div>
-      <div>
+      <div className={'images'}>
         <img src={require('../images/Squid.png')} width={'150'} className={'squid'}/>
         <img src={require('../images/PlayerSlow.png')} width={'100'} className={'squid2'}/>
       </div>
@@ -55,7 +56,7 @@ export function WebGLBuild() {
     return (
       <div className={'container'}>
         <div onClick={handleClick}>
-        <img src={require('../images/Ocean_Commotion.jpeg')} width={'1000'} height={'700'}/>
+        <img src={require('../images/Ocean_Commotion.jpeg')} width={'900'}/>
         <div className={'overlay'}>
           <div className={'overlayText'}>Click to play the game</div>
         </div>

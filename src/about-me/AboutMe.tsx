@@ -8,11 +8,11 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 export function AboutMe() {
   return (
-    <>
+    <div className={'aboutMe'}>
       <div className={'facts'}><Facts/></div>
       <div className={'skills'}><Skills/></div>
       <div className={'timeline'}><Timeline/></div>
-    </>
+    </div>
   )
 }
 

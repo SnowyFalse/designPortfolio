@@ -1,6 +1,6 @@
 .bar {
   color: white;
-  margin: 20px 100px;
+  margin: 20px 100px 0 100px;
   list-style: none;
 }
 .bar >li {
@@ -22,7 +22,7 @@
   height: 100%;
 }
 .bar >li:first-of-type:after {
-  top: 5%;
+  top: 3%;
 }
 
 .barClosed >li:first-of-type:after {
@@ -40,20 +40,4 @@
   margin:  20px 60px;
   font-family: Arial, Helvetica, sans-serif;
 
-  @media only screen and (max-width: 1390px) {
-    .images {
-      display: none;
-    }
-  }
-
-  .squid {
-    margin-left: 50%;
-    transform: rotate(20deg);
-  }
-
-  .squid2 {
-    margin-left: 100%;
-    margin-top: 200px;
-    transform: rotate(-20deg);
-  }
 }

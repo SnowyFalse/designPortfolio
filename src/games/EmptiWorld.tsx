@@ -24,12 +24,26 @@ export function Content() {
   return (
     <div className={'gameWrapper'}>
       <div>
-        <span>Group project</span>
-        <p>This is a text that describes the game.</p>
-        <p>Here are some details that I can't think of right now.</p>
+        <b>Group project</b>
+        <p>This game was developed as part of a group project containing 5 team members.</p>
         <img src={require('../images/Empti_World.jpeg')} width={'800'}/>
+        <p>
+          The work was split evening across the team members with all team members working on every aspect of the game development process.
+          This means that every team member, including myself, was developing. However, the responsibilities of creating the music and the art work were assigned mainly to me and Fabian Ceolotto.
+          In details, this means that the work I've contributed is the following:
+        </p>
+        <ul>
+          <li>Designs of buttons, icons and assets</li>
+          <li>character design</li>
+          <li>artwork used as background</li>
+          <li>development - such as inventory, (mini-)map and logic</li>
+        </ul>
+        <img src={require('../images/Bars.PNG')} width={'800'}/>
       </div>
-      <div>[Images here]</div>
+      <div>
+        <img src={require('../images/Empti2.png')} width={'100'} className={'squid'}/>
+        <img src={require('../images/Empti1.png')} width={'130'} className={'squid2'}/>
+      </div>
     </div>
   )
 }
