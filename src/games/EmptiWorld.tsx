@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {GameHeadline} from './Games';
-import './Games.scss';
+import './EmptiWorld.scss';
 
 export function EmptiWorld() {
   const [expandGame, setExpandGame] = useState(true);

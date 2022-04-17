@@ -1,44 +1,9 @@
 body {
   background-color: #23303C;
-  font-family: 'Roboto Mono', monospace;
-}
-
-.bar {
-  color: white;
-  margin: 20px 100px;
-  list-style: none;
-}
-.bar >li {
-  position: relative;
-}
-.bar>li:before {
-  color: white;
-  content: '\25CF';
-  margin-right: 10px;
-  font-size: 40px;
-}
-.bar>li:after {
-  position: absolute;
-  left: 4px;
-  top: 0;
-  content: '';
-  border-left: 5px solid white;
-  margin-left: 5px;
-  height: 100%;
-}
-.bar >li:first-of-type:after {
-  top: 5%;
-}
-
-.barClosed >li:first-of-type:after {
-  top: 25%;
-}
-
-.bar >li:last-of-type:after {
-  top: -50%;
 }
 
 .gameWrapper {
+  font-family: 'Roboto Mono', monospace;
   display: flex;
   flex-direction: row;
   margin:  20px 60px;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {GameHeadline} from './Games';
-import './Games.scss';
+import './OceanCommotion.scss';
 
 
 export function OceanCommotion() {
@@ -22,13 +22,14 @@ export function OceanCommotion() {
 }
 
 export function Content() {
+
   return (
     <div className={'gameWrapper'}>
       <div>
         <span>Single person production</span>
         <p>This is a text that describes the game.</p>
         <p>Here are some details that I can't think of right now.</p>
-        <img src={require('../images/Ocean_Commotion.jpeg')} width={'800'}/>
+        <WebGLBuild/>
       </div>
       <div>
         <img src={require('../images/Squid.png')} width={'150'} className={'squid'}/>
@@ -36,4 +37,31 @@ export function Content() {
       </div>
     </div>
   )
+}
+
+export function WebGLBuild() {
+  const [displayGame, setDisplayGame] = useState(false);
+  const handleClick = () => {
+    setDisplayGame(!displayGame);
+  }
+  if(displayGame) {
+    return (
+      <>
+        <iframe src={'https://snowyfalse.github.io/'} className={'webGLWrapper'}/>
+        <div onClick={handleClick} className={'closeButton'}>Close game</div>
+      </>
+    );
+  } else {
+    return (
+      <div className={'container'}>
+        <div onClick={handleClick}>
+        <img src={require('../images/Ocean_Commotion.jpeg')} width={'1000'} height={'700'}/>
+        <div className={'overlay'}>
+          <div className={'overlayText'}>Click to play the game</div>
+        </div>
+      </div>
+      </div>
+    );
+  }
+
 }
