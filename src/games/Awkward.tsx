@@ -26,7 +26,7 @@ export function Content() {
       <div>
         <b>Group project</b>
         <p>This game is the most recent work and is yet still in development. I am developing the game with a friend.</p>
-        <img src={require('../images/NeverHaveIEver.jpeg')} width={'800'}/>
+        <img src={require('../images/NeverHaveIEver.jpeg')} width={'800'} alt={'Never have I ever'}/>
         <p>
           My friend Mahir and me had the idea of developing a casual game that is played together.
           While he was implementing most of the logic and network communication, I focused on the game mechanics, the overall design and the artwork.

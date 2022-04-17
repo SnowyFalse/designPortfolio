@@ -33,8 +33,8 @@ export function Content() {
         <WebGLBuild/>
       </div>
       <div className={'images'}>
-        <img src={require('../images/Squid.png')} width={'150'} className={'squid'}/>
-        <img src={require('../images/PlayerSlow.png')} width={'100'} className={'squid2'}/>
+        <img src={require('../images/Squid.png')} width={'150'} className={'squid'} alt={'Squid 1'}/>
+        <img src={require('../images/PlayerSlow.png')} width={'100'} className={'squid2'}  alt={'Squid 2'}/>
       </div>
     </div>
   )
@@ -48,7 +48,7 @@ export function WebGLBuild() {
   if(displayGame) {
     return (
       <>
-        <iframe src={'https://snowyfalse.github.io/'} className={'webGLWrapper'}/>
+        <iframe src={'https://snowyfalse.github.io/'} className={'webGLWrapper'} title={'Ocean Commotion Game'}/>
         <div onClick={handleClick} className={'closeButton'}>Close game</div>
       </>
     );
@@ -56,7 +56,7 @@ export function WebGLBuild() {
     return (
       <div className={'container'}>
         <div onClick={handleClick}>
-        <img src={require('../images/Ocean_Commotion.jpeg')} width={'900'}/>
+        <img src={require('../images/Ocean_Commotion.jpeg')} width={'900'} alt={'Ocean Commotion'}/>
         <div className={'overlay'}>
           <div className={'overlayText'}>Click to play the game</div>
         </div>
