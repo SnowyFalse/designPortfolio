@@ -9,9 +9,13 @@ import DownloadIcon from '@mui/icons-material/Download';
 export function AboutMe() {
   return (
     <div className={'aboutMe'}>
-      <div className={'facts'}><Facts/></div>
-      <div className={'skills'}><Skills/></div>
-      <div className={'timeline'}><Timeline/></div>
+      <div className={'leftSide'}>
+        <div className={'facts'}><Facts/></div>
+        <div className={'skills'}><Skills/></div>
+      </div>
+      <div className={'rightSide'}>
+        <div className={'timeline'}><Timeline/></div>
+      </div>
     </div>
   )
 }
@@ -28,7 +32,7 @@ export function Timeline() {
     <>
       <div className={'cvDownload'}>
         <h2>Curriculum Vitae</h2>
-        <button><a href="./Lebenslauf_Dietinger.pdf" download><DownloadIcon/>Download CV</a></button>
+        <div className={'downloadButton'}><a href="./Lebenslauf_Dietinger.pdf" download><DownloadIcon/>Download CV</a></div>
       </div>
       <Education/>
       <Experience/>
