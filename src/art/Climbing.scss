@@ -1,18 +1,18 @@
-.barAD {
+.barC {
   color: white;
   margin: 20px 100px 0 100px;
   list-style: none;
 }
-.barAD >li {
+.barC >li {
   position: relative;
 }
-.barAD>li:before {
+.barC>li:before {
   color: white;
   content: '\25CF';
   margin-right: 10px;
   font-size: 40px;
 }
-.barAD>li:after {
+.barC>li:after {
   position: absolute;
   left: 4px;
   top: 0;
@@ -21,15 +21,15 @@
   margin-left: 5px;
   height: 100%;
 }
-.barAD >li:first-of-type:after {
-  top:8%;
+.barC >li:first-of-type:after {
+  top:2%;
 }
 
-.barADClosed >li:first-of-type:after {
+.barCClosed >li:first-of-type:after {
   top: 25%;
 }
 
-.barAD >li:last-of-type:after {
+.barC >li:last-of-type:after {
   top: -50%;
 }
 
@@ -40,17 +40,16 @@
   margin:  20px 60px;
   font-family: Arial, Helvetica, sans-serif;
 
-  .avatarWrapper {
+  .climbingWrapper {
     display: flex;
     width: 70%;
     flex-direction: column;
-    .avatarLines {
+
+    .climbingLines {
       display: flex;
       justify-content: space-between;
-      margin-top: 40px;
+      margin-bottom: 20px;
     }
   }
-  .imageDescription {
-    margin-top: 40px;
-  }
+
 }

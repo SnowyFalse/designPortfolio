@@ -12,11 +12,11 @@ export function Web() {
       <div className={'headline'}>
         <span className={'green'}>Web.</span>
         <span className={'blue'}>Design()</span>
-        <Multivative/>
-        <Solid/>
-        <Poker/>
-        <Portfolio/>
       </div>
+      <Multivative/>
+      <Solid/>
+      <Poker/>
+      <Portfolio/>
     </div>
   )
 }

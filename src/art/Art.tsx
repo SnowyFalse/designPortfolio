@@ -1,6 +1,7 @@
 import React from 'react';
 import './Art.scss';
 import {AvatarDesign} from "./AvatarDesign";
+import {Climbing} from "./Climbing";
 
 
 export function Art() {
@@ -9,8 +10,9 @@ export function Art() {
       <div className={'headline'}>
         <span className={'pink'}>Art.</span>
         <span className={'deepPurple'}>Projects()</span>
-        <AvatarDesign/>
       </div>
+      <AvatarDesign/>
+      <Climbing/>
     </div>
   )
 }
