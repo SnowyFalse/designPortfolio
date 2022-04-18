@@ -10,7 +10,7 @@ export function Navbar() {
         <Link to={'/portfolio'} className={'homeIconWrapper'}><HomeIcon className={'homeIcon'}/></Link>
         <Link to={'/portfolio/aboutme'} className={'link'}>About me</Link>
         <Link to={'/portfolio/games'} className={'link'}>Game Design</Link>
-        <Link to={'/portfolio/aboutme'} className={'link'}>Web Design</Link>
+        <Link to={'/portfolio/web'} className={'link'}>Web Design</Link>
         <Link to={'/portfolio/aboutme'} className={'link'}>Art Projects</Link>
         <span className={'languageSwitch'}>DE/EN</span>
       </div>

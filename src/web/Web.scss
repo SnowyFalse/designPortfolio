@@ -1,4 +1,4 @@
-.games {
+.web {
   min-height: 900px;
   height: 100%;
   width: 100%;
@@ -7,29 +7,31 @@
 
   .headline {
     padding: 20px 50px;
+    .green {
+      font-size: 64px;
+      color: #7EE77C;
+    }
+
     .blue {
       font-size: 64px;
-      color: #7CCDE7;
-    }
-
-    .purple {
-      font-size: 64px;
-      color: #9093E7;
+      color: #3D77CC;
     }
   }
-
 }
-.gameHeadline {
+
+
+
+.webHeadline {
   margin: 0 50px;
   cursor: pointer;
   .blue {
     font-size: 40px;
-    color: #7CCDE7;
+    color: #3D77CC;
   }
 
-  .purple {
+  .green {
     font-size: 40px;
-    color: #9093E7;
+    color: #7EE77C;
   }
 
   .white {
