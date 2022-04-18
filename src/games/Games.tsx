@@ -11,6 +11,8 @@ export function Games() {
       <div className={'headline'}>
         <span className={'blue'}>Game.</span>
         <span className={'purple'}>Design()</span>
+        <p className={'headlineDescription'}>Gaming has been an important part of my life since I was little.</p>
+        <p className={'headlineDescription'}>I always enjoyed playing games of all genres - from indie 2D platformers to open world MMORPGs. In 2019 I started getting into game design and development myself.</p>
       </div>
       <Awkward/>
       <EmptiWorld/>
