@@ -25,22 +25,24 @@ export function Content() {
     <div className={'gameWrapper'}>
       <div>
         <b>Group project</b>
-        <p>This game was developed as part of a group project containing 5 team members.</p>
+        <p className={'gameDescription'}>This game was developed as part of a group project containing 5 team members.</p>
         <img src={require('../images/Empti_World.jpeg')} width={'800'} alt={'Empti World'}/>
-        <p>
+        <p className={'gameDescription'}>
           The work was split evening across the team members with all team members working on every aspect of the game development process.
           This means that every team member, including myself, was developing. However, the responsibilities of creating the music and the art work were assigned mainly to me and Fabian Ceolotto.
           In details, this means that the work I've contributed is the following:
         </p>
-        <ul>
+        <ul className={'gameDescription'}>
           <li>Designs of buttons, icons and assets</li>
           <li>character design</li>
           <li>artwork used as background</li>
           <li>development - such as inventory, (mini-)map and logic</li>
         </ul>
         <img src={require('../images/Bars.PNG')} width={'800'} alt={'Empti World Screenshot'}/>
+        <p>The game can be played online on <a href={'https://criticalclimate.itch.io/empti-world'} target="_blank" className={'itchio'}>itch.io</a>
+        </p>
       </div>
-      <div>
+      <div className={'images'}>
         <img src={require('../images/Empti2.png')} width={'100'} className={'squid'} alt={'Empti sad'}/>
         <img src={require('../images/Empti1.png')} width={'130'} className={'squid2'} alt={'Empti happy'}/>
       </div>

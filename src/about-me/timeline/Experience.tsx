@@ -9,7 +9,7 @@ export function Experience() {
       headline: 'UX/UI Designer, DCCS GmbH',
       content: <>
         <h4>Tools and Technologies:</h4>
-        <p>Figma</p>
+        <ul><li>Figma</li></ul>
       </>
     },
     {
