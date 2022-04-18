@@ -1,0 +1,45 @@
+.barP {
+  color: white;
+  margin: 20px 100px 0 100px;
+  list-style: none;
+}
+.barP >li {
+  position: relative;
+}
+.barP>li:before {
+  color: white;
+  content: '\25CF';
+  margin-right: 10px;
+  font-size: 40px;
+}
+.barP>li:after {
+  position: absolute;
+  left: 4px;
+  top: 0;
+  content: '';
+  border-left: 5px solid white;
+  margin-left: 5px;
+  height: 100%;
+}
+.barP >li:first-of-type:after {
+  top:1.5%;
+}
+
+.barPClosed >li:first-of-type:after {
+  top: 25%;
+}
+
+.barP >li:last-of-type:after {
+  top: -50%;
+}
+
+.webWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1100px;
+  margin:  20px 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  .imageDescription {
+    margin-top: 40px;
+  }
+}

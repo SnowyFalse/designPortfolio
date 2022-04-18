@@ -12,9 +12,9 @@ export function Games() {
         <span className={'blue'}>Game.</span>
         <span className={'purple'}>Design()</span>
       </div>
-      <OceanCommotion/>
-      <EmptiWorld/>
       <Awkward/>
+      <EmptiWorld/>
+      <OceanCommotion/>
     </div>
   )
 }

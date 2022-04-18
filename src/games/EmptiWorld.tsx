@@ -12,7 +12,7 @@ export function EmptiWorld() {
   return (
     <ul className={contentStyling}>
       <li>
-        <GameHeadline name={'Empti World'} onClick={handleClick}/>
+        <GameHeadline name={'Emptis World'} onClick={handleClick}/>
         {content}
       </li>
       <li/>

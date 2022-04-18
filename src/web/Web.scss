@@ -17,26 +17,25 @@
       color: #3D77CC;
     }
   }
+
+  .webHeadline {
+    margin: 0 50px;
+    cursor: pointer;
+    .blue {
+      font-size: 40px;
+      color: #3D77CC;
+    }
+
+    .green {
+      font-size: 40px;
+      color: #7EE77C;
+    }
+
+    .white {
+      font-size: 40px;
+      color: white;
+    }
+  }
+
+
 }
-
-
-
-.webHeadline {
-  margin: 0 50px;
-  cursor: pointer;
-  .blue {
-    font-size: 40px;
-    color: #3D77CC;
-  }
-
-  .green {
-    font-size: 40px;
-    color: #7EE77C;
-  }
-
-  .white {
-    font-size: 40px;
-    color: white;
-  }
-}
-

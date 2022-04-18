@@ -6,7 +6,7 @@ export function Education() {
   const items: TimelineItemProjection[] = [
     {
       date: 'Since 10/2021',
-      headline: 'Masters Degree Program "Computer Science and Software Engineering and Management',
+      headline: 'Masters Degree Program "Computer Science and Software Engineering and Management"',
       content: <>
         <p>Computer Science, University of Technology </p>
         <ul>
@@ -22,13 +22,13 @@ export function Education() {
     },
     {
       date: '09/2021-02/2022',
-      headline: 'Masters Degree Program "IT und Wirtschaftsinformatik',
+      headline: 'Masters Degree Program "IT und Wirtschaftsinformatik"',
       content: <>
         <p>IT und Wirtschaftsinformatik, University of Applied Science Campus 02 </p>
         <p>Discontinued</p></>
     },
     {
-      date: '2018-2021',
+      date: '09/2018-06/2021',
       headline: 'Dual Bachelors Degree Program "Business Software Development"',
       content: <>
         <p>Business Software Development, University of Applied Science Campus 02</p>
