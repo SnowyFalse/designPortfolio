@@ -3,12 +3,12 @@ import {WebHeadline} from './Web';
 import './Multivative.scss';
 
 export function Multivative() {
-  const [expandGame, setExpandGame] = useState(true);
+  const [expandDesign, setExpandDesign] = useState(true);
   const handleClick = () => {
-    setExpandGame(!expandGame);
+    setExpandDesign(!expandDesign);
   }
-  const contentStyling = expandGame ? 'barM' : ' barM barMClosed';
-  const content = expandGame ? <Content/>: '';
+  const contentStyling = expandDesign ? 'barM' : ' barM barMClosed';
+  const content = expandDesign ? <Content/>: '';
   return (
     <ul className={contentStyling}>
       <li>

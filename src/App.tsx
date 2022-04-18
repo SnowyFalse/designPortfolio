@@ -6,6 +6,7 @@ import {LandingPage} from "./landing-page/LandingPage";
 import {Games} from "./games/Games";
 import {Navbar} from "./navbar/Navbar";
 import {Web} from "./web/Web";
+import {Art} from "./art/Art";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path={'/portfolio/aboutme'} element={<AboutMe/>}/>
           <Route path={'/portfolio/games'} element={<Games/>}/>
           <Route path={'/portfolio/web'} element={<Web/>}/>
+          <Route path={'/portfolio/art'} element={<Art/>}/>
         </Route>
       </Routes>
     </div>

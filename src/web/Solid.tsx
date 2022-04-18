@@ -25,7 +25,7 @@ export function Content() {
     <div className={'webWrapper'}>
       <div>
         <b>Company project</b>
-        <p>Solid is the name of the project I am currenlty working on in DCCS. The project was started in 2018, I joined the team in October 2019 as a developers. As of February 2022 the team was split into two and I am responsible for the UI/UX designs of one team.</p>
+        <p>Solid is the name of the project I am currenlty working on in DCCS. The project was started in 2018, I joined the team in October 2019 as a developer. As of February 2022 the team was split into two and I am responsible for the UI/UX designs of one team.</p>
         <p>As the project is already running for four years the challenge of the designs is to display the massive amount of data correctly without missing any connections to other parts of the application.</p>
         <p className={'imageDescription'}>The mockup below shows the feature of simulating a user. This tool is used for developers only to easily create test data. The design I created is the modal dialog. For legal reasons certain data had to be blurred</p>
         <img src={require('../images/Solid_user.jpeg')} width={'800'} alt={'Solid_user'}/>

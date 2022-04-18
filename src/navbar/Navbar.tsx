@@ -11,7 +11,7 @@ export function Navbar() {
         <Link to={'/portfolio/aboutme'} className={'link'}>About me</Link>
         <Link to={'/portfolio/games'} className={'link'}>Game Design</Link>
         <Link to={'/portfolio/web'} className={'link'}>Web Design</Link>
-        <Link to={'/portfolio/aboutme'} className={'link'}>Art Projects</Link>
+        <Link to={'/portfolio/art'} className={'link'}>Art Projects</Link>
         <span className={'languageSwitch'}>DE/EN</span>
       </div>
       <Outlet/>

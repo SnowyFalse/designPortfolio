@@ -1,4 +1,4 @@
-.web {
+.art {
   min-height: 900px;
   height: 100%;
   width: 100%;
@@ -7,33 +7,36 @@
 
   .headline {
     padding: 20px 50px;
-    .green {
+    .pink {
       font-size: 64px;
-      color: #7EE77C;
+      color: #E77CDC;
     }
 
-    .blue {
+    .deepPurple {
       font-size: 64px;
-      color: #3D77CC;
+      color: #6B3DCC;
     }
   }
 
-  .webHeadline {
+  .artHeadline {
     margin: 0 50px;
     cursor: pointer;
-    .blue {
+    .pink {
       font-size: 40px;
-      color: #3D77CC;
+      color: #E77CDC;
     }
 
-    .green {
+    .deepPurple {
       font-size: 40px;
-      color: #7EE77C;
+      color: #6B3DCC;
     }
+
 
     .white {
       font-size: 40px;
       color: white;
     }
   }
+
+
 }
