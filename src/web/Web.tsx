@@ -24,7 +24,7 @@ export function Web() {
 export function WebHeadline({name, onClick}: {name: string, onClick: () => void}) {
   return (
     <div className={'webHeadline'} onClick={onClick}>
-      <span className={'green'}>Game.</span>
+      <span className={'green'}>Web.</span>
       <span className={'blue'}>Design(</span>
       <span className={'white'}>{name}</span>
       <span className={'blue'}>)</span>
