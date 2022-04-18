@@ -8,7 +8,7 @@ export function OceanCommotion() {
   const handleClick = () => {
     setExpandGame(!expandGame);
   }
-  const contentStyling = expandGame ? 'bar' : ' bar barClosed';
+  const contentStyling = expandGame ? 'barOC' : ' barOC barOCClosed';
   const content = expandGame ? <Content/>: '';
   return (
     <ul className={contentStyling}>

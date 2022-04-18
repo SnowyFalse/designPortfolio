@@ -7,7 +7,7 @@ export function EmptiWorld() {
   const handleClick = () => {
     setExpandGame(!expandGame);
   }
-  const contentStyling = expandGame ? 'bar' : ' bar barClosed';
+  const contentStyling = expandGame ? 'barEW' : ' barEW barEWClosed';
   const content = expandGame ? <Content/>: '';
   return (
     <ul className={contentStyling}>
@@ -21,6 +21,13 @@ export function EmptiWorld() {
 }
 
 export function Content() {
+  const openLink = () => {
+    const otherWindow = window.open();
+    if(otherWindow) {
+      otherWindow.opener = null;
+      otherWindow.location = 'https://criticalclimate.itch.io/empti-world';
+    }
+  }
   return (
     <div className={'gameWrapper'}>
       <div>
@@ -39,7 +46,7 @@ export function Content() {
           <li>development - such as inventory, (mini-)map and logic</li>
         </ul>
         <img src={require('../images/Bars.PNG')} width={'800'} alt={'Empti World Screenshot'}/>
-        <p>The game can be played online on <a href={'https://criticalclimate.itch.io/empti-world'} target="_blank" className={'itchio'}>itch.io</a>
+        <p className={'linkDescription'}>The game can be played online on <span onClick={openLink} className={'itchio'}>itch.io</span>
         </p>
       </div>
       <div className={'images'}>

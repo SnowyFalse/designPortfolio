@@ -1,18 +1,18 @@
-.bar {
+.barFC {
   color: white;
   margin: 20px 100px 0 100px;
   list-style: none;
 }
-.bar >li {
+.barFC >li {
   position: relative;
 }
-.bar>li:before {
+.barFC>li:before {
   color: white;
   content: '\25CF';
   margin-right: 10px;
   font-size: 40px;
 }
-.bar>li:after {
+.barFC>li:after {
   position: absolute;
   left: 4px;
   top: 0;
@@ -21,15 +21,15 @@
   margin-left: 5px;
   height: 100%;
 }
-.bar >li:first-of-type:after {
+.barFC >li:first-of-type:after {
   top: 3%;
 }
 
-.barClosed >li:first-of-type:after {
+.barFCClosed >li:first-of-type:after {
   top: 25%;
 }
 
-.bar >li:last-of-type:after {
+.barFC >li:last-of-type:after {
   top: -50%;
 }
 

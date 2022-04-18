@@ -7,7 +7,7 @@ export function Awkward() {
   const handleClick = () => {
     setExpandGame(!expandGame);
   }
-  const contentStyling = expandGame ? 'bar' : ' bar barClosed';
+  const contentStyling = expandGame ? 'barFC' : ' barFC barFCClosed';
   const content = expandGame ? <Content/>: '';
   return (
     <ul className={contentStyling}>

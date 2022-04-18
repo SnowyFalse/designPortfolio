@@ -1,18 +1,18 @@
-.bar {
+.barEW {
   color: white;
   margin: 20px 100px;
   list-style: none;
 }
-.bar >li {
+.barEW >li {
   position: relative;
 }
-.bar>li:before {
+.barEW>li:before {
   color: white;
   content: '\25CF';
   margin-right: 10px;
   font-size: 40px;
 }
-.bar>li:after {
+.barEW>li:after {
   position: absolute;
   left: 4px;
   top: 0;
@@ -21,15 +21,15 @@
   margin-left: 5px;
   height: 100%;
 }
-.bar >li:first-of-type:after {
-  top: 5%;
+.barEW >li:first-of-type:after {
+  top: 2%;
 }
 
-.barClosed >li:first-of-type:after {
+.barEWClosed >li:first-of-type:after {
   top: 25%;
 }
 
-.bar >li:last-of-type:after {
+.barEW >li:last-of-type:after {
   top: -50%;
 }
 
@@ -43,15 +43,22 @@
   .gameDescription {
     margin: 20px 0;
   }
-
-  .itchio {
-    color: white;
-    &:hover {
-      color: #d0d0d0;
+  .linkDescription {
+    margin-top: 10px;
+    margin-bottom: 0;
+    .itchio {
+      color: white;
+      cursor: pointer;
+      text-decoration: underline;
+      &:hover {
+        color: #d0d0d0;
+      }
     }
   }
 
-  @media only screen and (max-width: 1890px) {
+
+
+  @media only screen and (max-width: 1490px) {
     .images {
       display: none;
     }
