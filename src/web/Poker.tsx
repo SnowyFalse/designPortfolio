@@ -7,16 +7,19 @@ export function Poker() {
   const handleClick = () => {
     setExpandGame(!expandGame);
   }
-  const contentStyling = expandGame ? 'barP' : ' barP barPClosed';
+  const contentStyling = expandGame ? 'bar' : ' bar barClosed';
   const content = expandGame ? <Content/>: '';
   return (
-    <ul className={contentStyling}>
-      <li>
-        <WebHeadline name={'Scrum Poker'} onClick={handleClick}/>
-        {content}
-      </li>
-      <li/>
-    </ul>
+    <div className={'poker'}>
+      <ul className={contentStyling}>
+        <li>
+          <WebHeadline name={'Scrum Poker'} onClick={handleClick}/>
+          {content}
+        </li>
+        <li/>
+      </ul>
+    </div>
+   
   )
 }
 

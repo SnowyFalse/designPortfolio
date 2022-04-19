@@ -7,16 +7,18 @@ export function Portfolio() {
   const handleClick = () => {
     setExpandGame(!expandGame);
   }
-  const contentStyling = expandGame ? 'barPo' : ' barPo barPoClosed';
+  const contentStyling = expandGame ? 'bar' : ' bar barClosed';
   const content = expandGame ? <Content/>: '';
   return (
-    <ul className={contentStyling}>
-      <li>
-        <WebHeadline name={'Portfolio'} onClick={handleClick}/>
-        {content}
-      </li>
-      <li/>
-    </ul>
+    <div className={'portfolio'}>
+      <ul className={contentStyling}>
+        <li>
+          <WebHeadline name={'Portfolio'} onClick={handleClick}/>
+          {content}
+        </li>
+        <li/>
+      </ul>
+    </div>
   )
 }
 

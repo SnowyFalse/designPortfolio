@@ -7,16 +7,18 @@ export function Multivative() {
   const handleClick = () => {
     setExpandDesign(!expandDesign);
   }
-  const contentStyling = expandDesign ? 'barM' : ' barM barMClosed';
+  const contentStyling = expandDesign ? 'bar' : ' bar barClosed';
   const content = expandDesign ? <Content/>: '';
   return (
-    <ul className={contentStyling}>
-      <li>
-        <WebHeadline name={'Multivative'} onClick={handleClick}/>
-        {content}
-      </li>
-      <li/>
-    </ul>
+    <div className={'multivative'}>
+      <ul className={contentStyling}>
+        <li>
+          <WebHeadline name={'Multivative'} onClick={handleClick}/>
+          {content}
+        </li>
+        <li/>
+      </ul>
+    </div>
   )
 }
 
