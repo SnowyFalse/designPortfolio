@@ -7,16 +7,18 @@ export function EmptiWorld() {
   const handleClick = () => {
     setExpandGame(!expandGame);
   }
-  const contentStyling = expandGame ? 'barEW' : ' barEW barEWClosed';
+  const contentStyling = expandGame ? 'bar' : ' bar barClosed';
   const content = expandGame ? <Content/>: '';
   return (
-    <ul className={contentStyling}>
-      <li>
-        <GameHeadline name={'Emptis World'} onClick={handleClick}/>
-        {content}
-      </li>
-      <li/>
-    </ul>
+    <div className={'emptiWorld'}>
+      <ul className={contentStyling}>
+        <li>
+          <GameHeadline name={'Emptis World'} onClick={handleClick}/>
+          {content}
+        </li>
+        <li/>
+      </ul>
+    </div>
   )
 }
 

@@ -5,38 +5,39 @@
   background-color: #23303C;
   font-family: 'Roboto Mono', monospace;
 
-  .headline {
+  & .headline {
     padding: 20px 50px;
 
-    .headlineDescription {
+    & .headlineDescription {
       color: white;
       font-size: 18px;
     }
-    .green {
+
+    & .green {
       font-size: 64px;
       color: #7EE77C;
     }
 
-    .blue {
+    & .blue {
       font-size: 64px;
       color: #3D77CC;
     }
   }
 
-  .webHeadline {
+  & .webHeadline {
     margin: 0 50px;
     cursor: pointer;
-    .blue {
+    & .blue {
       font-size: 40px;
       color: #3D77CC;
     }
 
-    .green {
+    & .green {
       font-size: 40px;
       color: #7EE77C;
     }
 
-    .white {
+    & .white {
       font-size: 40px;
       color: white;
     }

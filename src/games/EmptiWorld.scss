@@ -1,77 +1,80 @@
-.barEW {
-  color: white;
-  margin: 20px 100px;
-  list-style: none;
-}
-.barEW >li {
-  position: relative;
-}
-.barEW>li:before {
-  color: white;
-  content: '\25CF';
-  margin-right: 10px;
-  font-size: 40px;
-}
-.barEW>li:after {
-  position: absolute;
-  left: 4px;
-  top: 0;
-  content: '';
-  border-left: 5px solid white;
-  margin-left: 5px;
-  height: 100%;
-}
-.barEW >li:first-of-type:after {
-  top: 2%;
-}
-
-.barEWClosed >li:first-of-type:after {
-  top: 25%;
-}
-
-.barEW >li:last-of-type:after {
-  top: -50%;
-}
-
-.gameWrapper {
-  display: flex;
-  flex-direction: row;
-  width: 1100px;
-  margin:  20px 60px;
-  font-family: Arial, Helvetica, sans-serif;
-
-  .gameDescription {
-    margin: 20px 0;
+.emptiWorld {
+  & .bar {
+    color: white;
+    margin: 20px 100px;
+    list-style: none;
   }
-  .linkDescription {
-    margin-top: 10px;
-    margin-bottom: 0;
-    .itchio {
-      color: white;
-      cursor: pointer;
-      text-decoration: underline;
-      &:hover {
-        color: #d0d0d0;
+  & .bar >li {
+    position: relative;
+  }
+  & .bar>li:before {
+    color: white;
+    content: '\25CF';
+    margin-right: 10px;
+    font-size: 40px;
+  }
+  & .bar>li:after {
+    position: absolute;
+    left: 4px;
+    top: 0;
+    content: '';
+    border-left: 5px solid white;
+    margin-left: 5px;
+    height: 100%;
+  }
+  & .bar >li:first-of-type:after {
+    top: 2%;
+  }
+
+  & .barClosed >li:first-of-type:after {
+    top: 25%;
+  }
+
+  & .bar >li:last-of-type:after {
+    top: -50%;
+  }
+
+  .gameWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    margin: 20px 60px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    & .gameDescription {
+      margin: 20px 0;
+    }
+
+    & .linkDescription {
+      margin-top: 10px;
+      margin-bottom: 0;
+
+      & .itchio {
+        color: white;
+        cursor: pointer;
+        text-decoration: underline;
+
+        &:hover {
+          color: #d0d0d0;
+        }
       }
     }
-  }
 
-
-
-  @media only screen and (max-width: 1490px) {
-    .images {
-      display: none;
+    @media only screen and (max-width: 1490px) {
+      & .images {
+        display: none;
+      }
     }
-  }
 
-  .squid {
-    margin-left: 50%;
-    transform: rotate(20deg);
-  }
+    .squid {
+      margin-left: 50%;
+      transform: rotate(20deg);
+    }
 
-  .squid2 {
-    margin-left: 100%;
-    margin-top: 200px;
-    transform: rotate(-20deg);
+    .squid2 {
+      margin-left: 100%;
+      margin-top: 200px;
+      transform: rotate(-20deg);
+    }
   }
 }

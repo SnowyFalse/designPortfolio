@@ -1,61 +1,64 @@
-.barFC {
-  color: white;
-  margin: 20px 100px 0 100px;
-  list-style: none;
-}
-.barFC >li {
-  position: relative;
-}
-.barFC>li:before {
-  color: white;
-  content: '\25CF';
-  margin-right: 10px;
-  font-size: 40px;
-}
-.barFC>li:after {
-  position: absolute;
-  left: 4px;
-  top: 0;
-  content: '';
-  border-left: 5px solid white;
-  margin-left: 5px;
-  height: 100%;
-}
-.barFC >li:first-of-type:after {
-  top: 2%;
-}
-
-.barFCClosed >li:first-of-type:after {
-  top: 25%;
-}
-
-.barFC >li:last-of-type:after {
-  top: -50%;
-}
-
-.gameWrapper {
-  display: flex;
-  flex-direction: row;
-  width: 1100px;
-  margin:  20px 60px;
-  font-family: Arial, Helvetica, sans-serif;
-
-}
-.imageWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-  & img {
-    margin-bottom: 20px;
+.awkward {
+  & .bar {
+    color: white;
+    margin: 20px 100px 0 100px;
+    list-style: none;
   }
-}
-.moreInfo {
-  margin-top: 20px;
-}
-.showMoreMocks {
-  align-items: center;
-  display: flex;
-  cursor: pointer;
-  text-decoration: underline;
+  & .bar >li {
+    position: relative;
+  }
+  & .bar>li:before {
+    color: white;
+    content: '\25CF';
+    margin-right: 10px;
+    font-size: 40px;
+  }
+  & .bar>li:after {
+    position: absolute;
+    left: 4px;
+    top: 0;
+    content: '';
+    border-left: 5px solid white;
+    margin-left: 5px;
+    height: 100%;
+  }
+  & .bar >li:first-of-type:after {
+    top: 2%;
+  }
+
+  & .barClosed >li:first-of-type:after {
+    top: 25%;
+  }
+
+  & .bar >li:last-of-type:after {
+    top: -50%;
+  }
+
+  & .gameWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    margin:  20px 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    & .moreInfo {
+      margin-top: 20px;
+
+      & .imageWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        & img {
+          margin-bottom: 20px;
+        }
+      }
+
+      & .showMoreMocks {
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
 }

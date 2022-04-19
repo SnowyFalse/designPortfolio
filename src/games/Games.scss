@@ -5,42 +5,43 @@
   background-color: #23303C;
   font-family: 'Roboto Mono', monospace;
 
-  .headline {
+  & .headline {
     padding: 20px 50px;
 
-    .headlineDescription {
+    & .headlineDescription {
       color: white;
       font-size: 18px;
     }
 
-    .blue {
+    & .blue {
       font-size: 64px;
       color: #7CCDE7;
     }
 
-    .purple {
+    & .purple {
       font-size: 64px;
       color: #9093E7;
     }
   }
 
-}
-.gameHeadline {
-  margin: 0 50px;
-  cursor: pointer;
-  .blue {
-    font-size: 40px;
-    color: #7CCDE7;
+  & .gameHeadline {
+    margin: 0 50px;
+    cursor: pointer;
+    & .blue {
+      font-size: 40px;
+      color: #7CCDE7;
+    }
+
+    & .purple {
+      font-size: 40px;
+      color: #9093E7;
+    }
+
+    & .white {
+      font-size: 40px;
+      color: white;
+    }
   }
 
-  .purple {
-    font-size: 40px;
-    color: #9093E7;
-  }
-
-  .white {
-    font-size: 40px;
-    color: white;
-  }
 }
 

@@ -9,16 +9,18 @@ export function Awkward() {
   const handleClick = () => {
     setExpandGame(!expandGame);
   }
-  const contentStyling = expandGame ? 'barFC' : ' barFC barFCClosed';
+  const contentStyling = expandGame ? 'bar' : ' bar barClosed';
   const content = expandGame ? <Content/>: '';
   return (
-    <ul className={contentStyling}>
-      <li>
-        <GameHeadline name={'Friends Cube'} onClick={handleClick}/>
-        {content}
-      </li>
-      <li/>
-    </ul>
+    <div className={'awkward'}>
+      <ul className={contentStyling}>
+        <li>
+          <GameHeadline name={'Friends Cube'} onClick={handleClick}/>
+          {content}
+        </li>
+        <li/>
+      </ul>
+    </div>
   )
 }
 
