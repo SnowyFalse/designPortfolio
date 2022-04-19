@@ -1,0 +1,56 @@
+.landingPage {
+  font-family: 'Indie Flower', cursive;
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  background-color: #364E64;
+  color: #656565;
+  overflow: auto;
+  justify-content: space-between;
+
+  & .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    & img {
+      height: calc(100vh - 60px);
+    }
+  }
+
+  & .rightSide {
+    display: flex;
+    height: calc(100vh - 100px);
+    margin: 20px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .contentWrapper {
+      font-size: 72px;
+      color: white;
+    }
+    & .categories {
+      display: flex;
+      color: white;
+      font-size: 42px;
+      margin-top: 30px;
+
+      & .categoriesWrapper {
+        padding: 50px;
+
+        & .upper {
+          margin-bottom: 20px;
+        }
+        & .lower {
+          margin-top: 20px;
+        }
+      }
+      & .border {
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin: 0 -30px;
+      }
+    }
+  }
+}
