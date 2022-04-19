@@ -7,16 +7,18 @@ export function Climbing() {
   const handleClick = () => {
     setExpandDesign(!expandDesign);
   }
-  const contentStyling = expandDesign ? 'barC' : ' barC barCClosed';
+  const contentStyling = expandDesign ? 'bar' : ' bar barClosed';
   const content = expandDesign ? <Content/>: '';
   return (
-    <ul className={contentStyling}>
-      <li>
-        <ArtHeadline name={'Art & Sketches'} onClick={handleClick}/>
-        {content}
-      </li>
-      <li/>
-    </ul>
+    <div className={'climbing'}>
+      <ul className={contentStyling}>
+        <li>
+          <ArtHeadline name={'Art & Sketches'} onClick={handleClick}/>
+          {content}
+        </li>
+        <li/>
+      </ul>
+    </div>
   )
 }
 
