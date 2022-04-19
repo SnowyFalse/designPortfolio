@@ -56,7 +56,7 @@ export function WebGLBuild() {
     return (
       <div className={'container'}>
         <div onClick={handleClick}>
-        <img src={require('../images/Ocean_Commotion.jpeg')} width={'900'} alt={'Ocean Commotion'}/>
+        <img src={require('../images/Ocean_Commotion_Screenshot.png')} width={'900'} alt={'Ocean Commotion'}/>
         <div className={'overlay'}>
           <div className={'overlayText'}>Click to play the game</div>
         </div>

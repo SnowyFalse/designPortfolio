@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {GameHeadline} from './Games';
 import './Awkward.scss';
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 export function Awkward() {
   const [expandGame, setExpandGame] = useState(true);
@@ -21,11 +23,7 @@ export function Awkward() {
 }
 
 export function Content() {
-  const [showMocks, setShowMocks] = useState(false);
-  const handleOpen = () => {
-    setShowMocks(!showMocks);
-  }
-  const renderMocks = showMocks ? <div>[Add mocks]</div> : '';
+
   return (
     <div className={'gameWrapper'}>
       <div>
@@ -53,9 +51,32 @@ export function Content() {
           <li>Prototyping</li>
           <li>Implementation of the UI</li>
         </ul>
-        <p onClick={handleOpen}>Click here to see more mock ups</p>
-        {renderMocks}
+        <AdditionalContent/>
       </div>
+    </div>
+  )
+}
+
+export function AdditionalContent() {
+  const [showMocks, setShowMocks] = useState(false);
+  const handleOpen = () => {
+    setShowMocks(!showMocks);
+  }
+  const renderMocks = showMocks ? (
+    <div>
+      <p>The following screens show the different categories that can be played. The host can choose which categories will be included in the game session.</p>
+      <div className={'imageWrapper'}>
+        <img src={require('../images/mock_ups/Chill.jpeg')} width={'400'} alt={'Chill'}/>
+        <img src={require('../images/mock_ups/FuckMarryKill.jpeg')} width={'400'} alt={'FuckMarryKill'}/>
+        <img src={require('../images/mock_ups/SmashOrPass.jpeg')} width={'400'} alt={'SmashOrPass'}/>
+        <img src={require('../images/mock_ups/Spicy.jpeg')} width={'400'} alt={'Spicy'}/>
+      </div>
+      <div onClick={handleOpen} className={'showMoreMocks'}><KeyboardArrowUpIcon/>Show Less</div>
+    </div>
+    ) : <div onClick={handleOpen} className={'showMoreMocks'}><KeyboardArrowDownIcon/>Show More Mock Ups</div>;
+  return (
+    <div className={'moreInfo'}>
+      {renderMocks}
     </div>
   )
 }

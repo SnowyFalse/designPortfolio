@@ -14,9 +14,8 @@ export function Facts() {
           <EmailWrapper/>
           <FactWrapper headline={'Geburtsdatum'} content={'31.07.2000'}/>
         </div>
-        <img src={require('../images/Avatar.png')} width={'200'} alt={'Avatar'} className={'images'}/>
+        <img src={require('../images/Avatar.png')} width={'200'} alt={'Avatar'}/>
       </div>
-
     </div>
   )
 }
@@ -35,10 +34,12 @@ export function EmailWrapper() {
     <div className={'contentWrapper'}>
       <div className={'headline'}>E-Mail</div>
       <div className={'content'}>
-        <a href= "mailto:theresa.dietinger@gmail.com">theresa.dietinger@gmail.com</a>
-        <span className={'iconWrapper'}>
+        <a href= "mailto:theresa.dietinger@gmail.com">
+          theresa.dietinger@gmail.com
+          <span className={'iconWrapper'}>
             <EmailIcon/>
           </span>
+        </a>
       </div>
     </div>
   )

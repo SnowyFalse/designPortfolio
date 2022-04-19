@@ -10,6 +10,7 @@ export function Art() {
       <div className={'headline'}>
         <span className={'pink'}>Art.</span>
         <span className={'deepPurple'}>Projects()</span>
+        {/*<p className={'headlineDescription'}></p>*/}
       </div>
       <AvatarDesign/>
       <Climbing/>
