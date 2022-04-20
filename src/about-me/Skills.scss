@@ -11,9 +11,7 @@
 
   & .technologiesWrapper {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-
+    justify-content: space-around;
   }
 
   & .showMore {
@@ -23,6 +21,45 @@
     &:hover {
       color: #7b7e80;
     }
+  }
+}
+
+.dropdownCollapsed {
+  .headline {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    & span {
+      color: #656565;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+  margin-top: 10px;
+  border-bottom: 1px solid #656565;
+  padding: 10px;
+
+}
+
+.dropdownExpanded {
+  .headline {
+    display: flex;
+    justify-content: space-between;
+    & span {
+      color: #656565;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+  cursor: pointer;
+  background-color: #f3f3f6;
+
+  border-left: 3px solid #7CB2E3;
+  padding: 10px;
+  margin-top: 10px;
+
+  & .content {
+    padding-top: 10px;
   }
 }
 

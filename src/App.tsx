@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {Route, Routes} from "react-router-dom";
 import {AboutMe} from "./about-me/AboutMe";
-import {LandingPage} from "./landing-page/LandingPage";
+import {LandingPageV2} from "./landing-page/LandingPage";
 import {Games} from "./games/Games";
 import {Navbar} from "./navbar/Navbar";
 import {Web} from "./web/Web";
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path={'/portfolio'} element={<Navbar/>}>
-          <Route path={'/portfolio'} element={<LandingPage/>}/>
+          <Route path={'/portfolio'} element={<LandingPageV2/>}/>
           <Route path={'/portfolio/aboutme'} element={<AboutMe/>}/>
           <Route path={'/portfolio/games'} element={<Games/>}/>
           <Route path={'/portfolio/web'} element={<Web/>}/>

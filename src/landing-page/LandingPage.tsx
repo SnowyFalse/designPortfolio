@@ -28,3 +28,28 @@ export function LandingPage() {
     </div>
   )
 }
+
+export function LandingPageV2() {
+  return(
+    <div className={'landingPage landingPageV2'}>
+      <div className={'rightSide'}>
+        <div className={'contentWrapper'}>
+          <span>Theresa Dietinger</span>
+        </div>
+        <div className={'categories'}>
+          <div className={'categoriesWrapper'}>
+            <div className={'upper'}>Web</div>
+            <div className={'border'}/>
+            <div className={'lower'}>Game</div>
+          </div>
+          <div className={'border'}/>
+          <div className={'categoriesWrapper'}>
+            <div className={'upper'}>Dev</div>
+            <div className={'border'}/>
+            <div className={'lower'}>Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

@@ -1,8 +1,14 @@
+.background {
+  background: url('../images/backgroundv2.jpeg') left center no-repeat fixed;
+  background-size:100% auto;
+}
+
 .aboutMe {
   width: 100%;
+  backdrop-filter: blur(20px);
   height: calc(100vh - 60px);
   display: flex;
-  background-color: #B5C7D7;
+  background-color: rgba(181, 199, 215, 0.35);
   color: #656565;
   overflow: auto;
   justify-content: space-between;
@@ -10,10 +16,11 @@
 
   & .leftSide {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 20px;
-    width: 100%;
+    margin: 1%;
+    max-width: 50%;
     height: calc(100vh - 100px);
 
     & .facts {
@@ -35,19 +42,24 @@
   }
 
   & .rightSide {
+    flex-grow: 1;
     display: flex;
     height: calc(100vh - 100px);
-    margin: 20px;
-    width: 100%;
+    margin: 1%;
+    justify-content: center;
 
     & .timeline {
+      flex-grow: 1;
       border-radius: 10px;
-      width: 100%;
       background:white;
       padding: 40px;
-      overflow: auto;
       display: flex;
+      height: fit-content;
       flex-direction: column;
+
+      & h3 {
+        color: #7CB2E3;
+      }
 
       & .cvDownload {
         display: flex;

@@ -1,6 +1,10 @@
 .factsWrapper {
   display: flex;
-
+  @media only screen and (max-width: 1630px) {
+    & img {
+      display: none;
+    }
+  }
   & .contentWrapper {
     display: flex;
     align-items: center;
@@ -16,6 +20,8 @@
     & .content {
       font-size: 18px;
       width: 350px;
+      display: flex;
+
 
       a {
         color: #656565;

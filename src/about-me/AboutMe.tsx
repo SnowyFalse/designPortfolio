@@ -8,13 +8,15 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 export function AboutMe() {
   return (
-    <div className={'aboutMe'}>
-      <div className={'leftSide'}>
-        <div className={'facts'}><Facts/></div>
-        <div className={'skills'}><Skills/></div>
-      </div>
-      <div className={'rightSide'}>
-        <div className={'timeline'}><Timeline/></div>
+    <div className={'background'}>
+      <div className={'aboutMe'}>
+        <div className={'leftSide'}>
+          <div className={'facts'}><Facts/></div>
+          <div className={'skills'}><Skills/></div>
+        </div>
+        <div className={'rightSide'}>
+          <div className={'timeline'}><Timeline/></div>
+        </div>
       </div>
     </div>
   )

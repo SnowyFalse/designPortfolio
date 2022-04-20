@@ -6,57 +6,73 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 
 export function Skills() {
-  return (
-    <div className={'skillsWrapper'}>
-      <h2>Skills</h2>
-      <Technologies/>
-      <Trainings/>
-    </div>
-  )
-}
-
-export function Technologies() {
-  return (
-    <div className={'technologiesWrapper'}>
-      <div className={'topic'}>
-        <p>Frontend</p>
-        <ul>
-          <li>React</li>
-          <li>Typescript</li>
-          <li>Javascript</li>
-          <li>CSS/SCSS</li>
-          <li>Jest/Enzyme</li>
-        </ul>
-      </div>
-      <div className={'topic'}>
-        <p>Backend</p>
-        <ul>
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>Rest</li>
-          <li>JUnit</li>
-          <li>Scripting (Shell)</li>
-          <li>Gradle</li>
-        </ul>
-      </div>
-      <div className={'topic'}>
-        <p>Additional</p>
-        <ul>
-          <li>Figma</li>
-          <li>Scrum</li>
-          <li>Git</li>
-        </ul>
-      </div>
-    </div>
-  )
-}
-
-export function Trainings() {
   const [showMore, setShowMore] = useState(false);
   const handleClick = () => {
     setShowMore(!showMore);
   }
   if(showMore) {
+  return (
+    <div className={'skillsWrapper'}>
+      <h2>Skills</h2>
+      <Trainings/>
+      <Technologies/>
+      <Hobbies/>
+      <div onClick={handleClick} className={'showMore'}><KeyboardArrowUpIcon/>Show Less</div>
+    </div>
+  )
+  } else {
+    return (
+      <div className={'skillsWrapper'}>
+        <h2>Skills</h2>
+        <Trainings/>
+        <div onClick={handleClick} className={'showMore'}><KeyboardArrowDownIcon/>Show technology skills and hobbies</div>
+      </div>
+    )
+  }
+}
+
+export function Technologies() {
+  return (
+    <>
+      <h3>Technologies</h3>
+      <div className={'technologiesWrapper'}>
+        <div className={'topic'}>
+          <p>Frontend</p>
+          <ul>
+            <li>React</li>
+            <li>Typescript</li>
+            <li>Javascript</li>
+            <li>CSS/SCSS</li>
+            <li>Jest/Enzyme</li>
+          </ul>
+        </div>
+        <div className={'topic'}>
+          <p>Backend</p>
+          <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Rest</li>
+            <li>JUnit</li>
+            <li>Scripting (Shell)</li>
+            <li>Gradle</li>
+          </ul>
+        </div>
+        <div className={'topic'}>
+          <p>Additional</p>
+          <ul>
+            <li>Figma</li>
+            <li>Scrum</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </>
+
+  )
+}
+
+export function Trainings() {
+
     return (
       <>
         <h3>Trainings/Certifications</h3>
@@ -66,15 +82,8 @@ export function Trainings() {
           <li>05/2021 ITIL Foundation Level</li>
           <li>05/2020 IPMA Level D</li>
         </ul>
-        <Hobbies/>
-        <div onClick={handleClick} className={'showMore'}><KeyboardArrowUpIcon/>Show Less</div>
       </>
     )
-  } else {
-    return (
-        <div onClick={handleClick} className={'showMore'}><KeyboardArrowDownIcon/>Show More</div>
-    )
-  }
 
 }
 
