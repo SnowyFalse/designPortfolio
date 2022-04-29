@@ -17,14 +17,14 @@ export function Navbar() {
 
   const displayLang = language === 'en' ? (<span><span className={'underlined'}>DE</span>/EN</span>) : (<span>DE/<span className={'underlined'}>EN</span></span>);
 
-  return(
+  return (
     <>
       <div className={'navbar'}>
         <Link to={'/portfolio'} className={'homeIconWrapper'}><HomeIcon className={'homeIcon'}/></Link>
         <Link to={'/portfolio/aboutme'} className={'link'}>{t('aboutMe')}</Link>
-        <Link to={'/portfolio/games'} className={'link'}>Game Design</Link>
-        <Link to={'/portfolio/web'} className={'link'}>Web Design</Link>
-        <Link to={'/portfolio/art'} className={'link'}>Art Projects</Link>
+        <Link to={'/portfolio/games'} className={'link'}>{t('gameDesign')}</Link>
+        <Link to={'/portfolio/web'} className={'link'}>{t('webDesign')}</Link>
+        <Link to={'/portfolio/art'} className={'link'}>{t('artProjects')}</Link>
         <span className={'languageSwitch'} onClick={changeLanguage}>{displayLang}</span>
       </div>
       <Outlet/>

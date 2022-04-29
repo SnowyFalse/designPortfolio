@@ -3,9 +3,11 @@ import './Skills.scss'
 import {useState} from "react";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-
+import '../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 export function Skills() {
+  const { t } = useTranslation();
   const [showMore, setShowMore] = useState(false);
   const handleClick = () => {
     setShowMore(!showMore);
@@ -13,25 +15,26 @@ export function Skills() {
   if(showMore) {
   return (
     <div className={'skillsWrapper'}>
-      <h2>Skills</h2>
+      <h2>{t('skills')}</h2>
       <Trainings/>
       <Technologies/>
       <Hobbies/>
-      <div onClick={handleClick} className={'showMore'}><KeyboardArrowUpIcon/>Show Less</div>
+      <div onClick={handleClick} className={'showMore'}><KeyboardArrowUpIcon/>{t('showLess')}</div>
     </div>
   )
   } else {
     return (
       <div className={'skillsWrapper'}>
-        <h2>Skills</h2>
+        <h2>{t('skills')}</h2>
         <Trainings/>
-        <div onClick={handleClick} className={'showMore'}><KeyboardArrowDownIcon/>Show technology skills and hobbies</div>
+        <div onClick={handleClick} className={'showMore'}><KeyboardArrowDownIcon/>{t('showMore')}</div>
       </div>
     )
   }
 }
 
 export function Technologies() {
+  const { t } = useTranslation();
   return (
     <>
       <h3>Technologies</h3>
@@ -58,7 +61,7 @@ export function Technologies() {
           </ul>
         </div>
         <div className={'topic'}>
-          <p>Additional</p>
+          <p>{t('additional')}</p>
           <ul>
             <li>Figma</li>
             <li>Scrum</li>
@@ -72,29 +75,29 @@ export function Technologies() {
 }
 
 export function Trainings() {
-
-    return (
-      <>
-        <h3>Trainings/Certifications</h3>
-        <ul>
-          <li>[ongoing] Interaction Design - Visual Design, HCI, User Experience</li>
-          <li>[ongoing] ISTQB Foundation Level</li>
-          <li>05/2021 ITIL Foundation Level</li>
-          <li>05/2020 IPMA Level D</li>
-        </ul>
-      </>
-    )
-
+  const { t } = useTranslation();
+  return (
+    <>
+      <h3>{t('trainings')}</h3>
+      <ul>
+        <li>{t('ongoing')} Interaction Design - Visual Design, HCI, User Experience</li>
+        <li>{t('ongoing')} ISTQB Foundation Level</li>
+        <li>05/2021 ITIL Foundation Level</li>
+        <li>05/2020 IPMA Level D</li>
+      </ul>
+    </>
+  )
 }
 
 export function Hobbies() {
+  const { t } = useTranslation();
   return (
     <div>
-      <h3>Hobbies</h3>
+      <h3>{t('hobbies')}</h3>
       <ul>
-        <li>Climbing - I am a bouldering instructor since March 2018</li>
-        <li>Gaming - Games of all genres, but I am really digging (indie) games with a good art style and a nice story</li>
-        <li>Hiking - I like going on hikes with friends and my dog</li>
+        <li>{t('climbing')}</li>
+        <li>{t('gaming')}</li>
+        <li>{t('hiking')}</li>
       </ul>
     </div>
   )

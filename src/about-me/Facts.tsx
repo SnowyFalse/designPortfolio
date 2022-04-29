@@ -1,18 +1,21 @@
 import * as React from 'react';
 import './Facts.scss'
 import EmailIcon from '@mui/icons-material/Email';
+import '../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 export function Facts() {
+  const { t } = useTranslation();
   return (
     <div>
       <div className={'title'}>Facts</div>
       <div className={'factsWrapper'}>
         <div>
-          <FactWrapper headline={'Name'} content={'Theresa Dietinger, BSc'}/>
-          <FactWrapper headline={'Adresse'} content={'Jochen-Rindt-Weg 2/3, 8074 Raaba'}/>
-          <FactWrapper headline={'Telefon'} content={'0699 13115276'}/>
+          <FactWrapper headline={t('name')} content={'Theresa Dietinger, BSc'}/>
+          <FactWrapper headline={t('address')} content={'Jochen-Rindt-Weg 2/3, 8074 Raaba'}/>
+          <FactWrapper headline={t('phone')} content={'0699 13115276'}/>
           <EmailWrapper/>
-          <FactWrapper headline={'Geburtsdatum'} content={'31.07.2000'}/>
+          <FactWrapper headline={t('date')} content={'31.07.2000'}/>
         </div>
         <img src={require('../images/Avatar.png')} width={'200'} alt={'Avatar'}/>
       </div>
