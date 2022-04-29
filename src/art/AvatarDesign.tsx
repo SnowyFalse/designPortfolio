@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {ArtHeadline} from './Art';
 import './AvatarDesign.scss';
+import '../../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 export function AvatarDesign() {
   const [expandDesign, setExpandDesign] = useState(true);
@@ -24,11 +26,12 @@ export function AvatarDesign() {
 }
 
 export function Content() {
+  const { t } = useTranslation();
   return (
     <div className={'ArtWrapper'}>
       <div>
-        <b>Private project</b>
-        <p>I created the avatars as part of the Friends Cube Game. It is planned to extend the game by implementing a party mode with up to 8 players. The players should be able to choose between an avatar as their icon.</p>
+        <b>{t('privateProject')}</b>
+        <p>{t('avatars')}</p>
         <div className={'avatarWrapper'}>
           <div className={'avatarLines'}>
             <img src={require('../images/Avatar_design-modified.png')} width={'120'} alt={'Avatar_design'}/>

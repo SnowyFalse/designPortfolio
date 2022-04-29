@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {ArtHeadline} from './Art';
 import './Climbing.scss';
+import '../../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 export function Climbing() {
   const [expandDesign, setExpandDesign] = useState(true);
@@ -23,13 +25,14 @@ export function Climbing() {
 }
 
 export function Content() {
+  const { t } = useTranslation();
   return (
     <div className={'ArtWrapper'}>
       <div>
-        <p>My favourite hobby is climbing, specifically bouldering. I've been climbing since 2013 and also made a dream of mine come true by becoming a certified climbing trainer and teaching children and adults at the climbing gym in Leibnitz.</p>
-        <p className={'imageDescription'}>The following image shows a drawing I did of me during a climbing competition.</p>
+        <p>{t('climbingDescription')}</p>
+        <p className={'imageDescription'}>{t('climbingImage')}</p>
         <img src={require('../images/climbing.png')} width={'800'} alt={'Avatar_design-modified'}/>
-        <p className={'imageDescription'}>As I got into drawing relatively late when I was 16, my skills are not as advanced, but I still want to include some sketches to show my passion and also that I am learning.</p>
+        <p className={'imageDescription'}>{t('drawing')}</p>
         <div className={'climbingWrapper'}>
           <div className={'climbingLines'}>
             <img src={require('../images/sketches/sketch3.jpeg')} width={'300'} alt={'Avatar_design-modified'}/>

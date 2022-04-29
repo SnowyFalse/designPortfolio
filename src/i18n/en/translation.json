@@ -27,5 +27,14 @@
   "tools": "Tools and Technologies:",
   "frontEnd": "Full Stack Web Developer with a strong focus on Front End",
   "internal": "internal",
-  "internship": "Internship, DCCS GmbH"
+  "internship": "Internship, DCCS GmbH",
+  "art": "Art.",
+  "projects": "Projects()",
+  "projects(": "Projects(",
+  "bracket": ")",
+  "privateProject": "Private project",
+  "avatars": "I created the avatars as part of the Friends Cube Game. It is planned to extend the game by implementing a party mode with up to 8 players. The players should be able to choose between an avatar as their icon.",
+  "climbingDescription": "My favourite hobby is climbing, specifically bouldering. I've been climbing since 2013 and also made a dream of mine come true by becoming a certified climbing trainer and teaching children and adults at the climbing gym in Leibnitz.",
+  "climbingImage": "The following image shows a drawing I did of me during a climbing competition.",
+  "drawing": "As I got into drawing relatively late when I was 16, my skills are not as advanced, but I still want to include some sketches to show my passion and also that I am learning."
 }
