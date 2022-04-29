@@ -1,3 +1,4 @@
 {
-  "test": "This is a test"
+  "title": "Welcome to react using react-i18next and typescript 4.1",
+  "aboutMe": "About me"
 }
