@@ -85,8 +85,5 @@
   "solidDescription2": "As the project is already running for four years the challenge of the designs is to display the massive amount of data correctly without missing any connections to other parts of the application.",
   "solidDescription3": "The mockup below shows the feature of simulating a user. This tool is used for developers only to easily create test data. The design I created is the modal dialog. For legal reasons certain data had to be blurred",
   "solidDescription4": "The permission table is a feature designed fully by me. It is used for easy configuration of a role to permission mapping. The focus on this design was to enable a fast implementation of the feature.",
-  "solidDescription5": "When designing for Solid, I need to keep in mind to use specific design requirements such as using a predefined scrollbar. However, for the designs I did recently, I had more freedom than usually as the features are mainly used by developers.",
-  "test": "test",
-  "test": "test"
-
+  "solidDescription5": "When designing for Solid, I need to keep in mind to use specific design requirements such as using a predefined scrollbar. However, for the designs I did recently, I had more freedom than usually as the features are mainly used by developers."
 }
