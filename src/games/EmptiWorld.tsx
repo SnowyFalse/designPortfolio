@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {GameHeadline} from './Games';
 import './EmptiWorld.scss';
+import '../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 export function EmptiWorld() {
   const [expandGame, setExpandGame] = useState(true);
@@ -23,6 +25,7 @@ export function EmptiWorld() {
 }
 
 export function Content() {
+  const { t } = useTranslation();
   const openLink = () => {
     const otherWindow = window.open();
     if(otherWindow) {
@@ -33,22 +36,20 @@ export function Content() {
   return (
     <div className={'gameWrapper'}>
       <div>
-        <b>Group project</b>
-        <p className={'gameDescription'}>This game was developed as part of a group project containing 5 team members.</p>
+        <b>{t('groupProject')}</b>
+        <p className={'gameDescription'}>{t('emptiWorldDescription1')}</p>
         <img src={require('../images/Empti_World.jpeg')} width={'800'} alt={'Empti World'}/>
         <p className={'gameDescription'}>
-          The work was split evening across the team members with all team members working on every aspect of the game development process.
-          This means that every team member, including myself, was developing. However, the responsibilities of creating the music and the art work were assigned mainly to me and Fabian Ceolotto.
-          In details, this means that the work I've contributed is the following:
+          {t('emptiWorldDescription2')}
         </p>
         <ul className={'gameDescription'}>
-          <li>Designs of buttons, icons and assets</li>
-          <li>character design</li>
-          <li>artwork used as background</li>
-          <li>development - such as inventory, (mini-)map and logic</li>
+          <li>{t('emptiWorldDescriptionList1')}</li>
+          <li>{t('emptiWorldDescriptionList2')}</li>
+          <li>{t('emptiWorldDescriptionList3')}</li>
+          <li>{t('emptiWorldDescriptionList4')}</li>
         </ul>
         <img src={require('../images/Bars.PNG')} width={'800'} alt={'Empti World Screenshot'}/>
-        <p className={'linkDescription'}>The game can be played online on <span onClick={openLink} className={'itchio'}>itch.io</span>
+        <p className={'linkDescription'}>{t('playGameOnline')}<span onClick={openLink} className={'itchio'}>itch.io</span>
         </p>
       </div>
       <div className={'images'}>

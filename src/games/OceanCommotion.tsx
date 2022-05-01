@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {GameHeadline} from './Games';
 import './OceanCommotion.scss';
+import '../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 
 export function OceanCommotion() {
@@ -24,14 +26,12 @@ export function OceanCommotion() {
 }
 
 export function Content() {
-
+  const { t } = useTranslation();
   return (
     <div className={'gameWrapper'}>
       <div>
-        <b>Single person production</b>
-        <p>This simple underwater shoot'em up was designed and developed fully by myself. All the artwork used in the game,
-          except for the music and sound effects - which are copy right free - are selfmade and no additional sources are used</p>
-        <p>This game is the first game I developed back in 2019.</p>
+        <b>{t('singlePerson')}</b>
+        <p>{t('oceanDescription')}</p>
         <WebGLBuild/>
       </div>
       <div className={'images'}>
@@ -43,6 +43,7 @@ export function Content() {
 }
 
 export function WebGLBuild() {
+  const { t } = useTranslation();
   const [displayGame, setDisplayGame] = useState(false);
   const handleClick = () => {
     setDisplayGame(!displayGame);
@@ -51,7 +52,7 @@ export function WebGLBuild() {
     return (
       <>
         <iframe src={'https://snowyfalse.github.io/'} className={'webGLWrapper'} title={'Ocean Commotion Game'}/>
-        <div onClick={handleClick} className={'closeButton'}>Close game</div>
+        <div onClick={handleClick} className={'closeButton'}>{t('closeGame')}</div>
       </>
     );
   } else {
@@ -60,7 +61,7 @@ export function WebGLBuild() {
         <div onClick={handleClick}>
         <img src={require('../images/Ocean_Commotion_Screenshot.png')} width={'900'} alt={'Ocean Commotion'}/>
         <div className={'overlay'}>
-          <div className={'overlayText'}>Click to play the game</div>
+          <div className={'overlayText'}>{t('clickToPlay')}</div>
         </div>
       </div>
       </div>

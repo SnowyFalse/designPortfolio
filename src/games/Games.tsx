@@ -3,16 +3,19 @@ import './Games.scss';
 import {EmptiWorld} from './EmptiWorld';
 import {OceanCommotion} from './OceanCommotion';
 import {Awkward} from "./Awkward";
+import '../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 
 export function Games() {
+  const { t } = useTranslation();
   return(
     <div className={'games'}>
       <div className={'headline'}>
-        <span className={'blue'}>Game.</span>
-        <span className={'purple'}>Design()</span>
-        <p className={'headlineDescription'}>Gaming has been an important part of my life since I was little.</p>
-        <p className={'headlineDescription'}>I always enjoyed playing games of all genres - from indie 2D platformers to open world MMORPGs. In 2019 I started getting into game design and development myself.</p>
+        <span className={'blue'}>{t('game')}</span>
+        <span className={'purple'}>{t('design')}</span>
+        <p className={'headlineDescription'}>{t('gameDescription1')}</p>
+        <p className={'headlineDescription'}>{t('gameDescription2')}</p>
       </div>
       <Awkward/>
       <EmptiWorld/>
@@ -22,12 +25,13 @@ export function Games() {
 }
 
 export function GameHeadline({name, onClick}: {name: string, onClick: () => void}) {
+  const { t } = useTranslation();
   return (
     <div className={'gameHeadline'} onClick={onClick}>
-      <span className={'blue'}>Game.</span>
-      <span className={'purple'}>Design(</span>
+      <span className={'blue'}>{t('game')}</span>
+      <span className={'purple'}>{t('game')}</span>
       <span className={'white'}>{name}</span>
-      <span className={'purple'}>)</span>
+      <span className={'purple'}>{t('bracket')}</span>
     </div>
   )
 }

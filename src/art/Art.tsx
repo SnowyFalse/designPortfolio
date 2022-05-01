@@ -2,7 +2,7 @@ import React from 'react';
 import './Art.scss';
 import {AvatarDesign} from "./AvatarDesign";
 import {Climbing} from "./Climbing";
-import '../../i18n/config';
+import '../i18n/config';
 import { useTranslation } from 'react-i18next';
 
 
