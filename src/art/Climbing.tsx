@@ -29,9 +29,9 @@ export function Content() {
   return (
     <div className={'ArtWrapper'}>
       <div>
-        <p>{t('climbingDescription')}</p>
-        <p className={'imageDescription'}>{t('climbingImage')}</p>
-        <img src={require('../images/climbing.png')} width={'800'} alt={'Avatar_design-modified'}/>
+        {/*<p>{t('climbingDescription')}</p>*/}
+        {/*<p className={'imageDescription'}>{t('climbingImage')}</p>*/}
+        {/*<img src={require('../images/climbing.png')} width={'800'} alt={'Avatar_design-modified'}/>*/}
         <p className={'imageDescription'}>{t('drawing')}</p>
         <div className={'climbingWrapper'}>
           <div className={'climbingLines'}>
