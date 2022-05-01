@@ -10,12 +10,12 @@ export function Navbar() {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState('en');
   const changeLanguage = () => {
-    setLanguage(language === 'en' ? 'de': 'en');
-    console.log('language switch');
-    i18n.changeLanguage(language);
+    const currentLang = language === 'en' ? 'de': 'en';
+    setLanguage(currentLang);
+    i18n.changeLanguage(currentLang);
   }
 
-  const displayLang = language === 'en' ? (<span><span className={'underlined'}>DE</span>/EN</span>) : (<span>DE/<span className={'underlined'}>EN</span></span>);
+  const displayLang = language === 'de' ? (<span><span className={'underlined'}>DE</span>/EN</span>) : (<span>DE/<span className={'underlined'}>EN</span></span>);
 
   return (
     <>
