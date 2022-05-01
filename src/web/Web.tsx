@@ -4,17 +4,19 @@ import {Multivative} from "./Multivative";
 import {Solid} from "./Solid";
 import {Poker} from "./Poker";
 import {Portfolio} from "./Portfolio";
+import '../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 
 export function Web() {
-
+  const { t } = useTranslation();
   return(
     <div className={'web'}>
       <div className={'headline'}>
-        <span className={'green'}>Web.</span>
-        <span className={'blue'}>Design()</span>
-        <p className={'headlineDescription'}>Web Design and Development is the field where I have the most experience.</p>
-        <p className={'headlineDescription'}> I have been working as a web developer for 3 years and was promoted a web designer in Februar 2022.</p>
+        <span className={'green'}>{t('web')}</span>
+        <span className={'blue'}>{t('design')}</span>
+        <p className={'headlineDescription'}>{t('webDescription1')}</p>
+        <p className={'headlineDescription'}>{t('webDescription2')}</p>
       </div>
       <Multivative/>
       <Solid/>
@@ -25,10 +27,11 @@ export function Web() {
 }
 
 export function WebHeadline({name, onClick}: {name: string, onClick: () => void}) {
+  const { t } = useTranslation();
   return (
     <div className={'webHeadline'} onClick={onClick}>
-      <span className={'green'}>Web.</span>
-      <span className={'blue'}>Design(</span>
+      <span className={'green'}>{t('web')}</span>
+      <span className={'blue'}>{t('design(')}</span>
       <span className={'white'}>{name}</span>
       <span className={'blue'}>)</span>
     </div>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {WebHeadline} from './Web';
 import './Solid.scss';
+import '../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 export function Solid() {
   const [expandGame, setExpandGame] = useState(true);
@@ -23,17 +25,18 @@ export function Solid() {
 }
 
 export function Content() {
+  const { t } = useTranslation();
   return (
     <div className={'webWrapper'}>
       <div>
-        <b>Company project</b>
-        <p>Solid is the name of the project I am currenlty working on in DCCS. The project was started in 2018, I joined the team in October 2019 as a developer. As of February 2022 the team was split into two and I am responsible for the UI/UX designs of one team.</p>
-        <p>As the project is already running for four years the challenge of the designs is to display the massive amount of data correctly without missing any connections to other parts of the application.</p>
-        <p className={'imageDescription'}>The mockup below shows the feature of simulating a user. This tool is used for developers only to easily create test data. The design I created is the modal dialog. For legal reasons certain data had to be blurred</p>
+        <b>{t('companyProject')}</b>
+        <p>{t('solidDescription1')}</p>
+        <p>{t('solidDescription2')}</p>
+        <p className={'imageDescription'}>{t('solidDescription3')}</p>
         <img src={require('../images/Solid_user.jpeg')} width={'800'} alt={'Solid_user'}/>
-        <p className={'imageDescription'}>The permission table is a feature designed fully by me. It is used for easy configuration of a role to permission mapping. The focus on this design was to enable a fast implementation of the feature.</p>
+        <p className={'imageDescription'}>{t('solidDescription4')}</p>
         <img src={require('../images/Solid_Permissiontable.jpeg')} width={'800'} alt={'Permission_table'}/>
-        <p className={'imageDescription'}>When designing for Solid, I need to keep in mind to use specific design requirements such as using a predefined scrollbar. However, for the designs I did recently, I had more freedom than usually as the features are mainly used by developers.</p>
+        <p className={'imageDescription'}>{t('solidDescription5')}</p>
       </div>
     </div>
   )

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {WebHeadline} from './Web';
 import './Multivative.scss';
+import '../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 export function Multivative() {
   const [expandDesign, setExpandDesign] = useState(true);
@@ -23,16 +25,17 @@ export function Multivative() {
 }
 
 export function Content() {
+  const { t } = useTranslation();
   return (
     <div className={'webWrapper'}>
       <div>
-        <b>Company project</b>
-        <p>Multivative is a startup by Laurenz Fussenegger and Elias Vögel. I am supporting them by desigining and implementing the web frontend.</p>
-        <p>I started designing and implementing components in December 2021. For the mock up below, I designed the light grey components that are shown in different varient (default, selected and incomplete) </p>
+        <b>{t('companyProject')}</b>
+        <p>{t('multivativeDescription1')}</p>
+        <p>{t('multivativeDescription2')}</p>
         <img src={require('../images/Multivative_Designer.jpeg')} width={'800'} alt={'Multivative_Designer'}/>
-        <p className={'imageDescription'}>The following screenshots shows components and their variants, that were designed by me.</p>
+        <p className={'imageDescription'}>{t('multivativeDescription3')}</p>
         <img src={require('../images/Multivative_Components.jpeg')} width={'800'} alt={'Multivative_Components'}/>
-        <p className={'imageDescription'}>In the last mock up, a simplified version is designed to help the developers implement the designs iteratively through multiple sprints. The implementation of this view is currently in progress. </p>
+        <p className={'imageDescription'}>{t('multivativeDescription4')}</p>
         <img src={require('../images/Multivative_JobView.jpeg')} width={'800'} alt={'Multivative_JobView'}/>
       </div>
     </div>

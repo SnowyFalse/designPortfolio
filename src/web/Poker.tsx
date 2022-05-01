@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {WebHeadline} from './Web';
 import './Poker.scss';
+import '../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 export function Poker() {
   const [expandGame, setExpandGame] = useState(true);
@@ -24,17 +26,18 @@ export function Poker() {
 }
 
 export function Content() {
+  const { t } = useTranslation();
   return (
     <div className={'webWrapper'}>
       <div>
-        <b>Private project</b>
-        <p>The idea of a scrum poker tool was born after I noticed that there is no good free to use online tool for scrum pokers. Most online applications are lacking important features or are not working properly.</p>
-        <p>For this reason, I decided to design a Scrum poker tool myself. The following designs show the basic application with its main features. The design and features were created by me only. For the design process I started with requirements engineering and afterwards created a lofi userflow. Afterwards, I created hifi mock screens that can be used as reference for implementing.</p>
-        <p className={'imageDescription'}>The first mock up displays the view that lets users vote on stories.</p>
+        <b>{t('pokerDescription1')}</b>
+        <p>{t('pokerDescription2')}</p>
+        <p>{t('pokerDescription3')}</p>
+        <p className={'imageDescription'}>{t('pokerDescription5')}</p>
         <img src={require('../images/ScrumPoker.jpeg')} width={'800'} alt={'Scrum Poker'}/>
-        <p className={'imageDescription'}>The second mock up displays the view after every player has voted and the results are revealed.</p>
+        <p className={'imageDescription'}>{t('pokerDescription4')}</p>
         <img src={require('../images/ScrumPokerResults.jpeg')} width={'800'} alt={'Results'}/>
-        <p className={'imageDescription'}>The last mock up displays the start screen a user gets when creating a new poker session.</p>
+        <p className={'imageDescription'}>{t('pokerDescription5')}</p>
         <img src={require('../images/ScrumPokerCreate.jpeg')} width={'800'} alt={'Create'}/>
       </div>
     </div>
