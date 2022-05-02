@@ -29,7 +29,7 @@ export function GameHeadline({name, onClick}: {name: string, onClick: () => void
   return (
     <div className={'gameHeadline'} onClick={onClick}>
       <span className={'blue'}>{t('game')}</span>
-      <span className={'purple'}>{t('game')}</span>
+      <span className={'purple'}>{t('design(')}</span>
       <span className={'white'}>{name}</span>
       <span className={'purple'}>{t('bracket')}</span>
     </div>

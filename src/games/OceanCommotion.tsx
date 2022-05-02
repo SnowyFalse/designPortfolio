@@ -31,7 +31,8 @@ export function Content() {
     <div className={'gameWrapper'}>
       <div>
         <b>{t('singlePerson')}</b>
-        <p>{t('oceanDescription')}</p>
+        <p>{t('oceanDescription1')}</p>
+        <p>{t('oceanDescription2')}</p>
         <WebGLBuild/>
       </div>
       <div className={'images'}>

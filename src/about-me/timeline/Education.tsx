@@ -28,7 +28,8 @@ export function Education() {
       headline: 'Masters Degree Program "IT und Wirtschaftsinformatik"',
       content: <>
         <p>IT und Wirtschaftsinformatik, University of Applied Science Campus 02 </p>
-        <p>{t('discontinued')}Discontinued</p></>
+        <p>{t('discontinued')}</p>
+      </>
     },
     {
       date: '09/2018-06/2021',
