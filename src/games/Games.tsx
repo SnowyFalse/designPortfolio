@@ -5,12 +5,14 @@ import {OceanCommotion} from './OceanCommotion';
 import {Awkward} from "./Awkward";
 import '../i18n/config';
 import { useTranslation } from 'react-i18next';
+import {ScrollToTop} from "../ScrollToTop";
 
 
 export function Games() {
   const { t } = useTranslation();
   return(
     <div className={'games'}>
+      <ScrollToTop/>
       <div className={'headline'}>
         <span className={'blue'}>{t('game')}</span>
         <span className={'purple'}>{t('design')}</span>

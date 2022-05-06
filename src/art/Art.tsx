@@ -4,12 +4,14 @@ import {AvatarDesign} from "./AvatarDesign";
 import {Climbing} from "./Climbing";
 import '../i18n/config';
 import { useTranslation } from 'react-i18next';
+import {ScrollToTop} from "../ScrollToTop";
 
 
 export function Art() {
   const { t } = useTranslation();
   return(
     <div className={'art'}>
+      <ScrollToTop/>
       <div className={'headline'}>
         <span className={'pink'}>{t('art')}</span>
         <span className={'deepPurple'}>{t('projects')}</span>

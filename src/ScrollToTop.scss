@@ -1,0 +1,28 @@
+.scrollUp {
+  position: fixed;
+  color: white;
+  height: 50px!important;
+  width: 50px!important;
+  bottom: 40px;
+  right: 35px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+@keyframes movebtn {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}

@@ -7,12 +7,14 @@ import {Portfolio} from "./Portfolio";
 import '../i18n/config';
 import { useTranslation } from 'react-i18next';
 import {BoulderApp} from "./BoulderApp";
+import {ScrollToTop} from "../ScrollToTop";
 
 
 export function Web() {
   const { t } = useTranslation();
   return(
     <div className={'web'}>
+      <ScrollToTop/>
       <div className={'headline'}>
         <span className={'green'}>{t('web')}</span>
         <span className={'blue'}>{t('design')}</span>
