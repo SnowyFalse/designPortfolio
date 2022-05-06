@@ -82,8 +82,8 @@ export function Trainings() {
       <ul>
         <li>{t('ongoing')} Interaction Design - Visual Design, HCI, User Experience</li>
         <li>{t('ongoing')} ISTQB Foundation Level</li>
-        <li>05/2021 ITIL Foundation Level</li>
-        <li>05/2020 IPMA Level D</li>
+        <li><a href={'/ITIL_Zertifizierung.pdf'} download>05/2021 ITIL Foundation Level</a></li>
+        <li><a href={'/PM_Zertifizierung.pdf'} download>05/2020 IPMA Level D</a></li>
       </ul>
     </>
   )

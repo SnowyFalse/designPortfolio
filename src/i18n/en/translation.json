@@ -86,5 +86,11 @@
   "solidDescription2": "As the project is already running for four years the challenge of the designs is to display the massive amount of data correctly without missing any connections to other parts of the application.",
   "solidDescription3": "The mockup below shows the feature of simulating a user. This tool is used for developers only to easily create test data. The design I created is the modal dialog. For legal reasons certain data had to be blurred",
   "solidDescription4": "The permission table is a feature designed fully by me. It is used for easy configuration of a role to permission mapping. The focus on this design was to enable a fast implementation of the feature.",
-  "solidDescription5": "When designing for Solid, I need to keep in mind to use specific design requirements such as using a predefined scrollbar. However, for the designs I did recently, I had more freedom than usually as the features are mainly used by developers."
+  "solidDescription5": "When designing for Solid, I need to keep in mind to use specific design requirements such as using a predefined scrollbar. However, for the designs I did recently, I had more freedom than usually as the features are mainly used by developers.",
+  "boulderAppDescription1": "This app was developed as part of a class of my bachelors degree 'Principles of Mobile Computing.'",
+  "boulderAppDescription2": "The use of the app is to enable climbers to track their progress and share it with their friends",
+  "boulderAppDescription3": "The assignment was a group project for five team members, where everyone was working on the implementation. I took over the design additionally as I knew most about climbing and was interested in app design as well.",
+  "boulderAppDescription4": "Following will be the documentation that was created during the development process.",
+  "downloadCV": "Download CV",
+  "downloadDoc": "Download documentation"
 }

@@ -18,6 +18,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-i18next": "11.8.x",
+    "react-pdf": "latest",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "sass": "^1.49.11",
@@ -47,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-pdf": "latest"
   }
 }

@@ -5,6 +5,8 @@ import {Facts} from "./Facts";
 import {Education} from "./timeline/Education";
 import {Experience} from "./timeline/Experience";
 import DownloadIcon from '@mui/icons-material/Download';
+import '../i18n/config';
+import { useTranslation } from 'react-i18next';
 
 export function AboutMe() {
   return (
@@ -30,11 +32,12 @@ export interface TimelineItemProjection {
 
 
 export function Timeline() {
+  const { t } = useTranslation();
   return (
     <>
       <div className={'cvDownload'}>
         <h2>Curriculum Vitae</h2>
-        <div className={'downloadButton'}><a href="./Lebenslauf_Dietinger.pdf" download><DownloadIcon/>Download CV</a></div>
+        <div className={'downloadButton'}><a href={'/CV_Dietinger.pdf'} download><DownloadIcon/>{t('downloadCV')}</a></div>
       </div>
       <Education/>
       <Experience/>

@@ -6,6 +6,7 @@ import {Poker} from "./Poker";
 import {Portfolio} from "./Portfolio";
 import '../i18n/config';
 import { useTranslation } from 'react-i18next';
+import {BoulderApp} from "./BoulderApp";
 
 
 export function Web() {
@@ -21,6 +22,7 @@ export function Web() {
       <Multivative/>
       <Solid/>
       <Poker/>
+      <BoulderApp/>
       <Portfolio/>
     </div>
   )

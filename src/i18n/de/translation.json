@@ -56,7 +56,7 @@
   "emptiWorldDescriptionList3": "Grafiken, welche als Hintergrund verwendet werden",
   "emptiWorldDescriptionList4": "Entwicklung - wie beispielsweise das Inventar, die (mini-)map und Logik",
   "playGameOnline": "Das Spiel ist online spielbar, unter ",
-  "game": "Game.",
+  "game": "Spiel.",
   "design": "Design()",
   "design(": "Design(",
   "gameDescription1": "Gaming ist seit meiner Kindheit ein wichtiger Teil meines Lebens.",
@@ -86,5 +86,11 @@
   "solidDescription2": "Nachdem das Projekt bereits seit über vier Jahren läuft, ist eine der größten Herausforderungen an die Designs die enorme Anzahl an Datenstrukturen und deren Korrelationen untereinander und im Projekt korrekt darzustellen.",
   "solidDescription3": "Die folgenden Mockups zeigen das Feature einer User Simulation. Dieses Tool wird ausschließlich von Entwicklern und Testern verwendet, um so einfach Testdaten generieren zu können. Das von mir erstellte Design ist im modalen Dialog zu sehen. Aus rechtlichen Gründen sind einige Daten unkenntlich gemacht.",
   "solidDescription4": "Der Permission Table, welcher vollständig von mir designed wurde, wird für eine einfache Konfiguration von Rollen und Berechtigungen verwendet. Der Fokus des Designs bestand darin eine schnelle Implementierung für die EntwicklerInnen zu ermöglichen.",
-  "solidDescription5": "Bei Designs für Solid ist es wichtig spezielle Vorgaben des Kunden zu beachten. Zum Beispiel müssen spezielle Scrollbars verwendet werden. Allerdings hatte ich für die Designs, die ich zuletzt erstellt habe mehr Freiheiten, da diese primär von Entwicklern verwendet werden."
+  "solidDescription5": "Bei Designs für Solid ist es wichtig spezielle Vorgaben des Kunden zu beachten. Zum Beispiel müssen spezielle Scrollbars verwendet werden. Allerdings hatte ich für die Designs, die ich zuletzt erstellt habe mehr Freiheiten, da diese primär von Entwicklern verwendet werden.",
+  "boulderAppDescription1": "Die App wurde als Teil der Vorlesung 'Grundlagen Mobile Computing' entwickelt",
+  "boulderAppDescription2": "Sie soll es KletterInnen ermöglichen deren Fortschritt zu verfolgen und diesen mit Freundne zu teilen",
+  "boulderAppDescription3": "Die Aufgabenstellung wurde von einer Gruppe mit 5 Personen ausgeführt. Jedes Mitglied war an der Implementierung beteiligt, wobei ich noch zusätzlich für das Design verantwortlich war, da ich das meiste Wissen zum Thema Klettern hatte und am Design Prozess interessiert war.",
+  "boulderAppDescription4": "Folgend ist die Dokumentation, welche simultan zur Entwicklung erstellt wurde.",
+  "downloadCV": "Lebenslauf herunterladen",
+  "downloadDoc": "Dokumentation herunterladen"
 }

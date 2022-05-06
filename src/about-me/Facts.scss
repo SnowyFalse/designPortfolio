@@ -38,6 +38,13 @@
   font-size: 26px;
   margin-bottom: 20px;
   font-weight: bold;
+  display: flex;
+  & .iconWrapper {
+    margin-right: 30px;
+    display: flex;
+    color: #7CB2E3;
+    cursor: pointer;
+  }
 }
 
 

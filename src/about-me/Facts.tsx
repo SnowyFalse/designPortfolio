@@ -3,15 +3,17 @@ import './Facts.scss'
 import EmailIcon from '@mui/icons-material/Email';
 import '../i18n/config';
 import { useTranslation } from 'react-i18next';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export function Facts() {
   const { t } = useTranslation();
   return (
     <div>
-      <div className={'title'}>Facts</div>
+      <div className={'title'}>Facts
+      </div>
       <div className={'factsWrapper'}>
         <div>
-          <FactWrapper headline={t('name')} content={'Theresa Dietinger, BSc'}/>
+          <FactWrapper headline={t('name')} content={'Theresa Dietinger, BSc'} showLinkedIn={true}/>
           <FactWrapper headline={t('address')} content={'Jochen-Rindt-Weg 2/3, 8074 Raaba'}/>
           <FactWrapper headline={t('phone')} content={'0699 13115276'}/>
           <EmailWrapper/>
@@ -23,11 +25,15 @@ export function Facts() {
   )
 }
 
-export function FactWrapper({headline, content}: {headline: string, content: string}) {
+export function FactWrapper({headline, content, showLinkedIn}: {headline: string, content: string, showLinkedIn?: boolean}) {
+  const displayLinkedIn =  showLinkedIn ?
+  <a href={'https://www.linkedin.com/in/theresa-dietinger-b0546b21a/'} className={'iconWrapper'}><LinkedInIcon/></a> : '';
+
   return (
     <div className={'contentWrapper'}>
       <div className={'headline'}>{headline}</div>
-      <div className={'content'}>{content}</div>
+      <div className={'content'}>{content}{displayLinkedIn}</div>
+
     </div>
   )
 }
