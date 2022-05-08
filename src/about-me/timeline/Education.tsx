@@ -25,17 +25,17 @@ export function Education() {
     },
     {
       date: '09/2021-02/2022',
-      headline: 'Masters Degree Program "IT und Wirtschaftsinformatik"',
+      headline: t('campus02'),
       content: <>
-        <p>IT und Wirtschaftsinformatik, University of Applied Science Campus 02 </p>
+        <p>{t('campus02Master')}</p>
         <p>{t('discontinued')}</p>
       </>
     },
     {
       date: '09/2018-06/2021',
-      headline: 'Dual Bachelors Degree Program "Business Software Development"',
+      headline: t('bsd'),
       content: <>
-        <p>Business Software Development, University of Applied Science Campus 02</p>
+        <p>{t('bsd2')}</p>
         <p>{t('bachelorThesis')}</p>
         <p>{t('grade')}</p>
       </>

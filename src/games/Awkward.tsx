@@ -17,7 +17,7 @@ export function Awkward() {
     <div className={'awkward'}>
       <ul className={contentStyling}>
         <li>
-          <GameHeadline name={'Friends Cube'} onClick={handleClick}/>
+          <GameHeadline name={'Pandoras Box'} onClick={handleClick}/>
           {content}
         </li>
         <li/>

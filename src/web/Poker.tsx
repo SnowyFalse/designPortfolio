@@ -30,14 +30,14 @@ export function Content() {
   return (
     <div className={'webWrapper'}>
       <div>
-        <b>{t('pokerDescription1')}</b>
+        <b>{t('singlePerson')}</b>
+        <p>{t('pokerDescription1')}</p>
         <p>{t('pokerDescription2')}</p>
-        <p>{t('pokerDescription3')}</p>
         <p className={'imageDescription'}>{t('pokerDescription5')}</p>
         <img src={require('../images/ScrumPoker.jpeg')} width={'800'} alt={'Scrum Poker'}/>
-        <p className={'imageDescription'}>{t('pokerDescription4')}</p>
+        <p className={'imageDescription'}>{t('pokerDescription3')}</p>
         <img src={require('../images/ScrumPokerResults.jpeg')} width={'800'} alt={'Results'}/>
-        <p className={'imageDescription'}>{t('pokerDescription5')}</p>
+        <p className={'imageDescription'}>{t('pokerDescription4')}</p>
         <img src={require('../images/ScrumPokerCreate.jpeg')} width={'800'} alt={'Create'}/>
       </div>
     </div>

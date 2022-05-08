@@ -3,6 +3,7 @@ import {GameHeadline} from './Games';
 import './EmptiWorld.scss';
 import '../i18n/config';
 import { useTranslation } from 'react-i18next';
+import DownloadIcon from "@mui/icons-material/Download";
 
 export function EmptiWorld() {
   const [expandGame, setExpandGame] = useState(true);
@@ -51,6 +52,12 @@ export function Content() {
         <img src={require('../images/Bars.PNG')} width={'800'} alt={'Empti World Screenshot'}/>
         <p className={'linkDescription'}>{t('playGameOnline')}<span onClick={openLink} className={'itchio'}>itch.io</span>
         </p>
+        <p>{t('videoDescription')}</p>
+        <iframe width="800" height="472" src="https://www.youtube.com/embed/lGmQt0DRUyI" title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen/>
+        <div className={'downloadButton'}><a href={'/Game_Design_Document.pdf'} download><DownloadIcon/>{t('downloadDoc')}</a></div>
       </div>
       <div className={'images'}>
         <img src={require('../images/Empti2.png')} width={'100'} className={'squid'} alt={'Empti sad'}/>
