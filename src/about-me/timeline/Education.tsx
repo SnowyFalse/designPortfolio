@@ -9,7 +9,7 @@ export function Education() {
   const items: TimelineItemProjection[] = [
     {
       date: t('since') + ' 10/2021',
-      headline: 'Master\'s Degree Programme "Computer Science and Software Engineering and Management"',
+      headline: t('tugraz'),
       content: <>
         <p>Computer Science, University of Technology </p>
         <ul>
