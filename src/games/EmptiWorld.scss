@@ -46,8 +46,10 @@
       background: #7CB2E3;
       border-radius: 10px;
       height: 30px;
+      width: fit-content;
       padding: 8px 16px;
-      display: inline-block;
+      margin-top: 20px;
+      display: flex;
       z-index: 10;
       a {
         display: flex;
