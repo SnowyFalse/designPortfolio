@@ -1,8 +1,27 @@
 .navbar {
+  background-color: #E5E5E5;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+
+  & .linkWrapper {
+    display: flex;
+  }
+
+  & .underlined {
+    text-decoration: underline;
+  }
+}
+
+.darkNavbar {
   background-color: #2E4254;
   display: flex;
   height: 60px;
-  justify-content: space-evenly;
+  justify-content: space-between;
+
+  & .linkWrapper {
+    display: flex;
+  }
 
   & .underlined {
     text-decoration: underline;
@@ -16,37 +35,100 @@
   padding: 0 20px;
 
   &:hover {
-    background-color: #7f9bb4;
+    background-color: #cfcfcf;
+  }
+
+  &:active {
+    text-decoration: underline;
+    background-color: #cfcfcf;
   }
 
   .homeIcon {
-    font-size: 30px;
+    width: 40px;
+  }
+}
+
+.homeIconWrapperDark {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+
+  &:hover {
+    background-color: #354c62;
+  }
+
+  &:active {
+    text-decoration: underline;
+    background-color: #354c62;
+  }
+
+  .homeIcon {
+    width: 40px;
   }
 }
 
 .link {
   display: flex;
   align-items: center;
-  color: white;
   text-decoration: none;
   font-size: 20px;
-  padding: 0 20px;
+  padding: 0 40px;
+  color: #373737;
+  &:hover {
+    background-color: #cfcfcf;
+  }
+
+}
+
+.darkLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 40px;
+  color: white;
+
   &:hover {
     background-color: #354c62;
   }
+
+}
+
+.activeLink {
+  text-decoration: underline;
 }
 
 .languageSwitch {
   display: flex;
   align-items: center;
-  color: white;
   font-size: 20px;
   text-decoration: none;
-  padding: 0 20px;
+  padding: 0 40px;
+  color: #373737;
+  cursor: pointer;
+  height: 100%;
+  &:hover {
+    background-color: #cfcfcf;
+  }
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.languageSwitchDark {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 40px;
+  color: white;
   cursor: pointer;
   height: 100%;
   &:hover {
     background-color: #354c62;
   }
-
+  &:active {
+    text-decoration: underline;
+  }
 }

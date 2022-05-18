@@ -1,6 +1,5 @@
 import * as React from 'react';
-import {Link, Outlet} from "react-router-dom";
-import HomeIcon from '@mui/icons-material/Home';
+import {Link, NavLink, Outlet} from "react-router-dom";
 import './Navbar.scss';
 import '../i18n/config';
 import { useTranslation } from 'react-i18next';
@@ -14,18 +13,45 @@ export function Navbar() {
     setLanguage(currentLang);
     i18n.changeLanguage(currentLang);
   }
+  const [isLandingPage, setIsLandingPage] = useState(true);
 
   const displayLang = language === 'de' ? (<span><span className={'underlined'}>DE</span>/EN</span>) : (<span>DE/<span className={'underlined'}>EN</span></span>);
-
+  const styling = isLandingPage ? 'navbar' : 'darkNavbar';
+  const linkStyling = isLandingPage ? 'link' : 'darkLink';
+  const homeIcon = isLandingPage ? '/Squid_Icon.png' : '/SquidIconWhite.png';
+  const languageStyling = isLandingPage ? 'languageSwitch' : 'languageSwitchDark';
+  const iconStyling = isLandingPage ? 'homeIconWrapper' : 'homeIconWrapperDark';
   return (
     <>
-      <div className={'navbar'}>
-        <Link to={'/portfolio'} className={'homeIconWrapper'}><HomeIcon className={'homeIcon'}/></Link>
-        <Link to={'/portfolio/aboutme'} className={'link'}>{t('aboutMe')}</Link>
-        <Link to={'/portfolio/games'} className={'link'}>{t('gameDesign')}</Link>
-        <Link to={'/portfolio/web'} className={'link'}>{t('webDesign')}</Link>
-        <Link to={'/portfolio/art'} className={'link'}>{t('artProjects')}</Link>
-        <span className={'languageSwitch'} onClick={changeLanguage}>{displayLang}</span>
+      <div className={styling}>
+        <div className={'linkWrapper'}>
+          <Link to={'/portfolio'} className={iconStyling}><img src={homeIcon} className={'homeIcon'} alt={'Icon'} onClick={() =>setIsLandingPage(true)}/></Link>
+          <NavLink
+            to={'/portfolio/aboutme'}
+            className={({ isActive }) =>
+              linkStyling + (isActive ? ' activeLink' : '')}
+            onClick={() =>setIsLandingPage(false)}
+          >{t('aboutMe')}</NavLink>
+          <NavLink
+            to={'/portfolio/games'}
+            className={({ isActive }) =>
+              linkStyling + (isActive ? ' activeLink' : '')}
+            onClick={() =>setIsLandingPage(false)}
+          >{t('gameDesign')}</NavLink>
+          <NavLink
+            to={'/portfolio/web'}
+            className={({ isActive }) =>
+              linkStyling + (isActive ? ' activeLink' : '')}
+            onClick={() =>setIsLandingPage(false)}
+          >{t('webDesign')}</NavLink>
+          <NavLink
+            to={'/portfolio/art'}
+            className={({ isActive }) =>
+              linkStyling + (isActive ? ' activeLink' : '')}
+            onClick={() =>setIsLandingPage(false)}
+          >{t('artProjects')}</NavLink>
+        </div>
+        <span className={languageStyling} onClick={changeLanguage}>{displayLang}</span>
       </div>
       <Outlet/>
     </>
