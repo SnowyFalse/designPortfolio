@@ -38,9 +38,9 @@ export function LandingPageV2() {
         </div>
         <div className={'categories'}>
           <div className={'categoriesWrapper'}>
-            <div className={'upper'}>Web</div>
+            <div className={'upper'}>Game</div>
             <div className={'border'}/>
-            <div className={'lower'}>Game</div>
+            <div className={'lower'}>Web</div>
           </div>
           <div className={'border'}/>
           <div className={'categoriesWrapper'}>
