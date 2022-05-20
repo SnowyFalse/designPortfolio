@@ -32,11 +32,12 @@ export function Content() {
         <b>{t('privateProject')}</b>
         <p>{t('portfolioDescription1')}</p>
         <p>{t('portfolioDescription2')}</p>
+        <img src={require('../images/Moodboard.png')} width={'800'} alt={'Moodboard'}/>
         <p>{t('portfolioDescription3')}</p>
-        <img src={require('../images/Landingpage1.jpeg')} width={'800'} alt={'Landingpage 1'}/>
-        <img src={require('../images/LandingPage2.jpeg')} width={'800'} alt={'Landingpage 2'}/>
-        <img src={require('../images/Landingpage3.jpeg')} width={'800'} alt={'Landingpage 3'}/>
-        <img src={require('../images/LandingPage4.jpeg')} width={'800'} alt={'Landingpage 4'}/>
+        <img src={require('../images/LandingPage2.jpeg')} width={'800'} alt={'Landingpage 1'}/>
+        <img src={require('../images/LandingPage4.jpeg')} width={'800'} alt={'Landingpage 2'}/>
+        <p>{t('portfolioDescription4')}</p>
+        <img src={require('../images/ProjectPage.png')} width={'800'} alt={'Project Page'}/>
       </div>
     </div>
   )
