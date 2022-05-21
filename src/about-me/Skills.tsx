@@ -16,8 +16,8 @@ export function Skills() {
   return (
     <div className={'skillsWrapper'}>
       <h2>{t('skills')}</h2>
-      <Trainings/>
       <Technologies/>
+      <Trainings/>
       <Hobbies/>
       <div onClick={handleClick} className={'showMore'}><KeyboardArrowUpIcon/>{t('showLess')}</div>
     </div>
@@ -26,7 +26,7 @@ export function Skills() {
     return (
       <div className={'skillsWrapper'}>
         <h2>{t('skills')}</h2>
-        <Trainings/>
+        <Technologies/>
         <div onClick={handleClick} className={'showMore'}><KeyboardArrowDownIcon/>{t('showMore')}</div>
       </div>
     )
@@ -37,7 +37,7 @@ export function Technologies() {
   const { t } = useTranslation();
   return (
     <>
-      <h3>Technologies</h3>
+      <h3>{t('technologies')}</h3>
       <div className={'technologiesWrapper'}>
         <div className={'topic'}>
           <p>Frontend</p>
