@@ -21,34 +21,40 @@ export function Navbar() {
   const homeIcon = isLandingPage ? '/Squid_Icon.png' : '/SquidIconWhite.png';
   const languageStyling = isLandingPage ? 'languageSwitch' : 'languageSwitchDark';
   const iconStyling = isLandingPage ? 'homeIconWrapper' : 'homeIconWrapperDark';
+  const makeLight = () => {
+    setIsLandingPage(true);
+  };
+  const makeDark = () => {
+    setIsLandingPage(false);
+  };
   return (
     <>
       <div className={styling}>
         <div className={'linkWrapper'}>
-          <Link to={'/portfolio'} className={iconStyling}><img src={homeIcon} className={'homeIcon'} alt={'Icon'} onClick={() =>setIsLandingPage(true)}/></Link>
+          <Link to={'/portfolio'} className={iconStyling} onClick={makeLight}><img src={homeIcon} className={'homeIcon'} alt={'Icon'}/></Link>
           <NavLink
             to={'/portfolio/aboutme'}
             className={({ isActive }) =>
               linkStyling + (isActive ? ' activeLink' : '')}
-            onClick={() =>setIsLandingPage(false)}
+            onClick={makeDark}
           >{t('aboutMe')}</NavLink>
           <NavLink
             to={'/portfolio/games'}
             className={({ isActive }) =>
               linkStyling + (isActive ? ' activeLink' : '')}
-            onClick={() =>setIsLandingPage(false)}
+            onClick={makeDark}
           >{t('gameDesign')}</NavLink>
           <NavLink
             to={'/portfolio/web'}
             className={({ isActive }) =>
               linkStyling + (isActive ? ' activeLink' : '')}
-            onClick={() =>setIsLandingPage(false)}
+            onClick={makeDark}
           >{t('webDesign')}</NavLink>
           <NavLink
             to={'/portfolio/art'}
             className={({ isActive }) =>
               linkStyling + (isActive ? ' activeLink' : '')}
-            onClick={() =>setIsLandingPage(false)}
+            onClick={makeDark}
           >{t('artProjects')}</NavLink>
         </div>
         <span className={languageStyling} onClick={changeLanguage}>{displayLang}</span>
